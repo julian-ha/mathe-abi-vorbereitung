@@ -1,6 +1,6 @@
 <?php
 include "config.php";
-
+echo "Test";
 if(isset($_POST['sumbit'])){
 
 echo "Test";
