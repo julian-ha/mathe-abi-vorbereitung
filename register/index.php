@@ -1,17 +1,26 @@
 <?php 
 session_start();
 $pdo = new PDO('mysql:host=188.68.47.203;dbname=k93814_matheAbi', 'k93814_matheAbi', 'Sxt0m25?');
-$_SESSION['email'] = ;
-$_SESSION['vorname'] = ;
-$_SESSION['nachname'] =  ;
-$vorname = ;
-$nachname = ;
-$email = $_POST['email'];
+
+
+// if(!isset($_SESSION['email'])){
+
+//     $_SESSION['email'] = $get_params['buyer_email'] ;
+//     $_SESSION['vorname'] = $get_params['buyer_first_name'] ;
+//     $_SESSION['nachname'] = $get_params['buyer_last_name'] ;  
+// }
+
+// echo $_SESSION['email'] . "<br>";
+// echo $_SESSION['vorname'] . "<br>";
+// echo $_SESSION['nachname'] . "<br>";
 ?>
+
+
+
 <!DOCTYPE html> 
 <html> 
 <head>
-  <title>Registrierung</title>    
+  <title>Mathe Abi Vorbereitung</title>    
 </head> 
 <body>
  
@@ -25,18 +34,20 @@ if(isset($_GET['register'])) {
     $passwort2 = $_POST['passwort2'];
 
   
-    if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo 'Bitte eine gültige E-Mail-Adresse eingeben<br>';
-        $error = true;
-    }     
+
+  
+    // if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    //     echo 'Bitte eine gültige E-Mail-Adresse eingeben<br>';
+    //     $error = true;
+    // }     
     // if(strlen($passwort) == 0) {
     //     echo 'Bitte ein Passwort angeben<br>';
     //     $error = true;
     // }
-    // if($passwort != $passwort2) {
-    //     echo 'Die Passwörter müssen übereinstimmen<br>';
-    //     $error = true;
-    // }
+    if($passwort != $passwort2) {
+        echo 'Die Passwörter müssen übereinstimmen<br>';
+        $error = true;
+    }
     
     //Überprüfe, dass die E-Mail-Adresse noch nicht registriert wurde
     // if(!$error) { 
@@ -54,8 +65,8 @@ if(isset($_GET['register'])) {
     if(!$error) {    
         $passwort_hash = password_hash($passwort, PASSWORD_DEFAULT);
         
-        $statement = $pdo->prepare("INSERT INTO benutzer (email, passwort, vorname, nachname) VALUES (:email, :passwort, :vorname, :nachname)");
-        $result = $statement->execute(array('email' => $email, 'passwort' => $passwort_hash, 'vorname' => $vorname, 'nachname' => $nachname));
+        $statement = $pdo->prepare("INSERT INTO benutzer (mail, passwort, vorname, nachname) VALUES (:email, :passwort, :vorname, :nachname)");
+        $result = $statement->execute(array('email' => $_SESSION['email'], 'passwort' => $passwort_hash, 'vorname' => $_SESSION['vorname'], 'nachname' => $_SESSION['nachname']));
         
         if($result) {        
             echo 'Du wurdest erfolgreich registriert. <a href="login.php">Zum Login</a>';
@@ -70,14 +81,12 @@ if($showFormular) {
 ?>
  
 <form action="?register=1" method="post">
-E-Mail:<br>
-<input type="email" size="40" maxlength="250" name="email"><br><br>
+
+
  
 Dein Passwort:<br>
-<input type="password" size="40"  maxlength="250" name="passwort"><br>
- 
-Passwort wiederholen:<br>
-<input type="password" size="40" maxlength="250" name="passwort2"><br><br>
+<input type="password" size="40"  maxlength="250" name="passwort" required><br>
+<input type="password" size="40" maxlength="250" name="passwort2" required><br>
  
 <input type="submit" value="Abschicken">
 </form>
