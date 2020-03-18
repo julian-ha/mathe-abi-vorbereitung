@@ -24,6 +24,7 @@ echo "Test";
    $token = getToken(10);
    $_SESSION['user_mail'] = $email;
    $_SESSION['user_token'] = $token;
+   $_SESSION['userid'] = $user_id;
 
    // Update user token 
    $result_token = mysqli_query($con, "select count(*) as allcount from user_token WHERE user_id = '".$user_id."'");
