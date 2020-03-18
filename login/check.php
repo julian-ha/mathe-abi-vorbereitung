@@ -13,11 +13,12 @@ echo "Test";
 
  if ($email != "" && $password != ""){
 
-  $sql_query = "select id, count(*) as cntUser from benutzer where mail='".$email."' and passwort='".$password."'";
+  $sql_query = "select id, count(*) as cntUser from benutzer where mail='".$email."' and passwort='".$password."' GROUP BY id";
   $result = mysqli_query($con,$sql_query);
   $row = mysqli_fetch_array($result);
 
   $count = $row['cntUser'];
+  echo $count;
   $user_id = $row['id'];
 
   if($count > 0){
