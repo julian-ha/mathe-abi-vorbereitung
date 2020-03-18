@@ -9,7 +9,9 @@ if(isset($_POST['submit'])){
 
 echo "Test";
  $email = mysqli_real_escape_string($con,$_POST['email']);
+ echo $email . "<br>";
  $password = mysqli_real_escape_string($con,$_POST['passwort']);
+ echo $password . "<br>";
 
  if ($email != "" && $password != ""){
 
