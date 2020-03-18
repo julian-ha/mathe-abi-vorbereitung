@@ -14,6 +14,7 @@ session_start();
         
         <?php if(isset($_SESSION['fehlermeldung'])){
             echo "<p>". $_SESSION['fehlermeldung']. "</p>";
+            unset($_SESSION['fehlermeldung']);
         } ?>
         <input type="submit" name="submit" value="Abschicken">
         </form>
