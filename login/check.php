@@ -3,6 +3,7 @@ include "config.php";
 
 if(isset($_POST['sumbit'])){
 
+echo "Test";
  $email = mysqli_real_escape_string($con,$_POST['email']);
  $password = mysqli_real_escape_string($con,$_POST['passwort']);
 
