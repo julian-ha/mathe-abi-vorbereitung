@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(isset($_SESSION['fehlermeldung'])){
+    unset($_SESSION['fehlermeldung']);
+}
 include "config.php";
 echo "Test";
 if(isset($_POST['submit'])){
@@ -31,7 +35,7 @@ echo "Test";
    }
    header('Location: https://www.google.com/');
   }else{
-   echo "Ungültige Email oder Passwort";
+    $_SESSION['fehlermeldung'] = "Login Fehlerhaft";
   }
 
  }
