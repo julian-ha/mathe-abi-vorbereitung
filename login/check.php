@@ -13,7 +13,7 @@ echo "Test";
 
  if ($email != "" && $password != ""){
 
-  $sql_query = "select id, count(*) as cntUser from benutzer where email='".$email."' and passwort='".$password."'";
+  $sql_query = "select id, count(*) as cntUser from benutzer where mail='".$email."' and passwort='".$password."'";
   $result = mysqli_query($con,$sql_query);
   $row = mysqli_fetch_array($result);
 
