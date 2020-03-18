@@ -10,9 +10,9 @@ $pdo = new PDO('mysql:host=188.68.47.203;dbname=k93814_matheAbi', 'k93814_matheA
 //     $_SESSION['nachname'] = $get_params['buyer_last_name'] ;  
 // }
 
-echo $_SESSION['email'] . "<br>";
-echo $_SESSION['vorname'] . "<br>";
-echo $_SESSION['nachname'] . "<br>";
+// echo $_SESSION['email'] . "<br>";
+// echo $_SESSION['vorname'] . "<br>";
+// echo $_SESSION['nachname'] . "<br>";
 ?>
 
 
@@ -34,18 +34,20 @@ if(isset($_GET['register'])) {
     $passwort2 = $_POST['passwort2'];
 
   
-    if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo 'Bitte eine gültige E-Mail-Adresse eingeben<br>';
-        $error = true;
-    }     
+
+  
+    // if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    //     echo 'Bitte eine gültige E-Mail-Adresse eingeben<br>';
+    //     $error = true;
+    // }     
     // if(strlen($passwort) == 0) {
     //     echo 'Bitte ein Passwort angeben<br>';
     //     $error = true;
     // }
-    // if($passwort != $passwort2) {
-    //     echo 'Die Passwörter müssen übereinstimmen<br>';
-    //     $error = true;
-    // }
+    if($passwort != $passwort2) {
+        echo 'Die Passwörter müssen übereinstimmen<br>';
+        $error = true;
+    }
     
     //Überprüfe, dass die E-Mail-Adresse noch nicht registriert wurde
     // if(!$error) { 
@@ -64,7 +66,7 @@ if(isset($_GET['register'])) {
         $passwort_hash = password_hash($passwort, PASSWORD_DEFAULT);
         
         $statement = $pdo->prepare("INSERT INTO benutzer (email, passwort, vorname, nachname) VALUES (:email, :passwort, :vorname, :nachname)");
-        $result = $statement->execute(array('email' => $email, 'passwort' => $passwort_hash, 'vorname' => $vorname, 'nachname' => $nachname));
+        $result = $statement->execute(array('email' => $_SESSION['email'], 'passwort' => $passwort_hash, 'vorname' => $_SESSION['vorname'], 'nachname' => $_SESSION['nachname']));
         
         if($result) {        
             echo 'Du wurdest erfolgreich registriert. <a href="login.php">Zum Login</a>';
@@ -83,7 +85,8 @@ if($showFormular) {
 
  
 Dein Passwort:<br>
-<input type="password" size="40"  maxlength="250" name="passwort"><br>
+<input type="password" size="40"  maxlength="250" name="passwort" required><br>
+<input type="password" size="40" maxlength="250" name="passwort2" required><br>
  
 <input type="submit" value="Abschicken">
 </form>
