@@ -329,11 +329,13 @@ $email = isset( $DECRYPTED_GET_PARAMS[ 'buyer_email' ] )
             
 $first_name = isset( $DECRYPTED_GET_PARAMS[ 'buyer_first_name' ] )
             ? $DECRYPTED_GET_PARAMS[ 'buyer_first_name' ]
-            : '';           
+            : '';
+$last_name = isset( $DECRYPTED_GET_PARAMS ['buyer_last_name']) ? $DECRYPTED_GET_PARAMS['buyer_last_name'] : '';          
             
 // Liefern Sie hier Ihre Inhalte aus
 $_SESSION['email'] = $email;
 $_SESSION['vorname'] = $first_name;
+$_SESSION['nachname'] = $last_name;
 
 header('Location: http://www.mathe-abi-vorbereitung.de/register/');
 ?>

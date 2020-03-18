@@ -12,6 +12,7 @@ $pdo = new PDO('mysql:host=188.68.47.203;dbname=k93814_matheAbi', 'k93814_matheA
 
 echo $_SESSION['email'] . "<br>";
 echo $_SESSION['vorname'] . "<br>";
+echo $_SESSION['nachname'] . "<br>";
 ?>
 
 
