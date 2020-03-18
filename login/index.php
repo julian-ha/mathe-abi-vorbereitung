@@ -9,9 +9,9 @@
         <input type="mail" name="email" required><br>
         <input type="password" name="passwort" required><br>
         <input type="submit" name="submit" value="Abschicken">
-        if(isset($_SESSION['fehlermeldung'])){
+        <?php if(isset($_SESSION['fehlermeldung'])){
             echo "<p>". $_SESSION['fehlermeldung']. "</p>";
-        }
+        } ?>
 
         </form>
         
