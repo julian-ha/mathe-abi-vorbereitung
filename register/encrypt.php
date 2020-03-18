@@ -335,7 +335,7 @@ $first_name = isset( $DECRYPTED_GET_PARAMS[ 'buyer_first_name' ] )
 $_SESSION['email'] = $email;
 $_SESSION['vorname'] = $first_name;
 
-header('Location: http://www.mathe-abi-vorbereitung/register/');
+header('Location: http://www.mathe-abi-vorbereitung.de/register/');
 ?>
 <!-- <h1>Ihre gekauften Inhalte</h1>
 
