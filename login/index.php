@@ -6,8 +6,10 @@
 
     <body>
         <form action="check.php">
-        <input type="mail" name="email" required>
-        <input type="password" name="passwort" required>
+        <input type="mail" name="email" required><br>
+        <input type="password" name="passwort" required><br>
+        <input type="submit" value="Abschicken">
+
         </form>
         
     </body>
