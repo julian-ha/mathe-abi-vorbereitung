@@ -8,7 +8,7 @@
         <form action="check.php">
         <input type="mail" name="email" required><br>
         <input type="password" name="passwort" required><br>
-        <input type="submit" value="Abschicken">
+        <input type="submit" name="submit" value="Abschicken">
 
         </form>
         
