@@ -1,18 +1,10 @@
 <?php 
 session_start();
-$pdo = new PDO('mysql:host=188.68.47.203;dbname=k93814_matheAbi', 'k93814_matheAbi', 'Sxt0m25?');
+require('./dbconnect.php');
+$pdo = connect();
+//$pdo = new PDO('mysql:host=188.68.47.203;dbname=k93814_matheAbi', 'k93814_matheAbi', 'Sxt0m25?');
 
 
-// if(!isset($_SESSION['email'])){
-
-//     $_SESSION['email'] = $get_params['buyer_email'] ;
-//     $_SESSION['vorname'] = $get_params['buyer_first_name'] ;
-//     $_SESSION['nachname'] = $get_params['buyer_last_name'] ;  
-// }
-
-// echo $_SESSION['email'] . "<br>";
-// echo $_SESSION['vorname'] . "<br>";
-// echo $_SESSION['nachname'] . "<br>";
 ?>
 
 
