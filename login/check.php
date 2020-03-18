@@ -40,7 +40,7 @@ echo "Test";
    header('Location: https://www.google.com/');
   }else{
     $_SESSION['fehlermeldung'] = "Login Fehlerhaft";
-    header('Location: https://mathe-abi-vorbereitung.de/login/');
+    //header('Location: https://mathe-abi-vorbereitung.de/login/');
   }
 
  }
