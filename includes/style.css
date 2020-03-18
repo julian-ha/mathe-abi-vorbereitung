@@ -1,0 +1,28 @@
+a {
+  color: #f79e15 !important;
+}
+.header {
+  background-color: #1d1c46;
+}
+.info-section {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+#light-lila {
+  color: #5953b1;
+}
+#light-orange {
+  color: #f79e15;
+}
+.e-sub {
+  margin-top: 20px !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+}
+.e-button {
+  background-color: #f79e15;
+  color: #fff !important;
+  border: none;
+  font-weight: 600;
+}
