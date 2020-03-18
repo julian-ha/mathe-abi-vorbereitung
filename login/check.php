@@ -1,7 +1,7 @@
 <?php
 include "config.php";
 echo "Test";
-if(isset($_POST['sumbit'])){
+if(isset($_POST['submit'])){
 
 echo "Test";
  $email = mysqli_real_escape_string($con,$_POST['email']);
