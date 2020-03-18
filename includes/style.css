@@ -15,8 +15,12 @@ a {
 #light-orange {
   color: #f79e15;
 }
+.e-head {
+  font-weight: 700 !important;
+}
 .e-sub {
   margin-top: 20px !important;
+  margin-bottom: 20px !important;
   font-weight: 500 !important;
   font-size: 1rem !important;
 }
@@ -25,4 +29,15 @@ a {
   color: #fff !important;
   border: none;
   font-weight: 600;
+}
+.header2 {
+  background-color: #7f76d3;
+}
+.info-list {
+  color: #fff;
+  font-weight: 600;
+}
+.so-gehts {
+  background-color: #1d1c46;
+  color: #fff !important;
 }
