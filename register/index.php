@@ -3,7 +3,7 @@ session_start();
 $pdo = new PDO('mysql:host=188.68.47.203;dbname=k93814_matheAbi', 'k93814_matheAbi', 'Sxt0m25?');
 $_SESSION['email'] = ;
 $_SESSION['vorname'] = ;
-$_SESSION['nachname'] = ;
+$_SESSION['nachname'] =  ;
 $vorname = ;
 $nachname = ;
 $email = $_POST['email'];
