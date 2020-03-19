@@ -10,7 +10,7 @@ if(isset($_POST['submit'])){
     echo $password . "<br>";
 
     //Überprüfung mit Datenbank
-    $sql = "SELECT *, COUNT(*) as anzahl FROM benutzer WHERE benutzername = :nutzer";
+    $sql = "SELECT * FROM benutzer WHERE benutzername = :nutzer";
     $statement = $pdo->prepare($sql);
     $statement->execute(array('nutzer' => $benutzername));
     $user = $statement->fetch();
@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
     if ($user !== false && password_verify($password, $user['passwort'])) {
         $_SESSION['user'] = $user['benutzername'];
         $_SESSION['isloggedin'] = true;
-        header('Location https://mathe-abi-vorbereitung.de/')
+        header('Location https://mathe-abi-vorbereitung.de/');
         
     } else {
         $error = true;
