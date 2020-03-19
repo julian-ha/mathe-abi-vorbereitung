@@ -23,7 +23,8 @@ if(isset($_POST['submit'])){
     } else {
         $error = true;
         $_SESSION['notification'] = "Es wurde kein Benutzer zu den eingegebenen Daten gefunden.";
-        header('Location https://mathe-abi-vorbereitung.de/login/');
+        echo "falsche Eingaben";
+        //header('Location https://mathe-abi-vorbereitung.de/login/');
     }
 
     
