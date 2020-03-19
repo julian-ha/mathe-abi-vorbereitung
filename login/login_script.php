@@ -28,7 +28,7 @@ if(isset($_POST['submit'])){
     //generieren des Session Tokens
     if(!$error){
         //token
-        $token = "oxofrimbel";
+        $token = getToken(10);
         
         //SQL
         $sql = "SELECT * FROM user_token WHERE benutzername = :nutzer";
@@ -52,6 +52,21 @@ if(isset($_POST['submit'])){
     }
 
 }
+
+// Generate token
+function getToken($length){
+    $token = "";
+    $codeAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    $codeAlphabet.= "abcdefghijklmnopqrstuvwxyz";
+    $codeAlphabet.= "0123456789";
+    $max = strlen($codeAlphabet); // edited
+   
+    for ($i=0; $i < $length; $i++) {
+     $token .= $codeAlphabet[random_int(0, $max-1)];
+    }
+   
+    return $token;
+   }
 
 
 
