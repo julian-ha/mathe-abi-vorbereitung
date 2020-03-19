@@ -5,7 +5,9 @@ $pdo = new PDO('mysql:host=188.68.47.203;dbname=k93814_matheAbi', 'k93814_matheA
 
 if(isset($_POST['submit'])){
     $benutzername = $_POST['benutzer'];
+    echo $benutzer . "<br>";
     $password = $_POST['passwort'];
+    echo $password . "<br>";
 
     //Überprüfung mit Datenbank
     $sql = "SELECT *, COUNT(*) as anzahl FROM benutzer WHERE benutzername = :nutzer AND passwort = :passwort";
