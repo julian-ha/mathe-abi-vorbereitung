@@ -31,7 +31,7 @@ if(isset($_POST['submit'])){
         $token = "oxofrimbel";
         
         //SQL
-        $sql = "SELECT * AS anzahl FROM user_token WHERE benutzername = :nutzer";
+        $sql = "SELECT * FROM user_token WHERE benutzername = :nutzer";
         $statement = $pdo->prepare($sql);
         $statement->execute(array('nutzer' => $benutzername));
         $token_result = $statement->fetch();
