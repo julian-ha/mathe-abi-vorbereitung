@@ -37,16 +37,10 @@ if(isset($_POST['submit'])){
         $token_result = $statement->fetch();
 
         if($token_result !== false){
-            //update
-            $sql_token = "UPDATE user_token SET token = :tok WHERE benutzername = :nutzer";
-            $statement = $pdo->prepare($sql_token);
-            $statement->execute(array('tok' => $token, 'nutzer' => $benutzername));
+           echo "yxcvyxcvyxcv";
 
         }else{
-            //Insert
-            $sql_token = "INSERT INTO user_token (user_id, benutzername, token) VALUES (:id, :nutzer, :tok)";
-            $statement = $pdo->prepare($sql_token);
-            $statement->execute(array('tok' => $token, 'nutzer' => $benutzername, 'id' => $user['id']));
+            echo"asdfasdfasdf";
         }
 
     }
