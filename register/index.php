@@ -50,7 +50,7 @@ if(isset($_GET['register'])) {
         
         if($user !== false) {
             //echo 'Diese E-Mail-Adresse ist bereits vergeben<br>';
-            $_SESSION['fehler'] = "Diese E-Mail-Adresse ist bereits vergeben";
+            $_SESSION['fehler'] = "Dieser Benutzername ist bereits vergeben";
             $error = true;
         }    
     }
@@ -65,6 +65,25 @@ if(isset($_GET['register'])) {
         if($result) {        
             //echo 'Du wurdest erfolgreich registriert. <a href="login.php">Zum Login</a>';
             $_SESSION['fehler'] = "Du wurdest erfolreich registriert";
+
+            //Email mit den Daten versenden
+            $empfaenger = $_SESSION['email'];
+            $betreff = "Zugangsdaten Mathe Abi Vorbereitung";
+            $from = "From: Mathe Abi Vorbereitung <noreply@mathe-abi-vorbereitung.de>";
+            $text = "Hallo " . $_SESSION['vorname']. ", 
+            Vielen Dank für die Registrierung bei Mathe-Abi-Vorbereitung.de
+            Hier sind deine Zugangsdaten um alle Vorteile der Plattform nutzen zu können.
+            
+            benutzername: " . $benutzername ."
+            Passwort: " . $passwort . "
+            
+            Viel Spaß und ganz viel Erfolg bei deinem Abitur,
+            Dein Mathe Abi Vorbereitungs Team";
+            
+            mail($empfaenger, $betreff, $text, $from);
+
+            //hier ist die Weiterleitung auf die nächste Seite
+            header("Location: https://mathe-abi-vorbereitung.de/");
             $showFormular = false;
         } else {
             //echo 'Beim Abspeichern ist leider ein Fehler aufgetreten<br>';
