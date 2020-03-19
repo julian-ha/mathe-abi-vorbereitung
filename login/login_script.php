@@ -12,7 +12,7 @@ if(isset($_POST['submit'])){
     $statement = $pdo->prepare($sql);
     $statement->execute(array('email' => $email, 'passwort' => $password));
     $user = statement->fetch();
-    echo $user['vorname'];
+    
 
 
 }
