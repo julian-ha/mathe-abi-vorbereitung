@@ -29,6 +29,7 @@ if(isset($_POST['submit'])){
     if(!$error){
         //token
         $token = getToken(10);
+       
         
         //SQL
         $sql = "SELECT * FROM user_token WHERE benutzername = :nutzer";
@@ -48,6 +49,11 @@ if(isset($_POST['submit'])){
             $statement = $pdo->prepare($sql_token);
             $statement->execute(array('tok' => $token, 'nutzer' => $benutzername, 'id' => $user['id']));
         }
+
+        $_SESSION['token'] = $token;
+        $_SESSION['benutzername'] = $benutzername;
+        $_SESSION['isloggedin'] = true;
+        header('Location: https://mathe-abi-vorbereitung.de/');
 
     }
 
