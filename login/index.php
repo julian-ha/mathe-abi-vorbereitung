@@ -8,7 +8,7 @@ session_start();
     </head>
 
     <body>
-        <form action="check.php" method="POST">
+        <form action="login_script.php" method="POST">
         <input type="mail" name="email" required><br>
         <input type="password" name="passwort" required><br>
         
