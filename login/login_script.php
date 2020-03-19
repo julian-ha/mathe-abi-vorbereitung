@@ -25,25 +25,7 @@ if(isset($_POST['submit'])){
         header('Location: https://mathe-abi-vorbereitung.de/login/');
     }
 
-    //generieren des Session Tokens
-    if(!$error){
-        //token
-        $token = "oxofrimbel";
-        
-        //SQL
-        $sql = "SELECT * FROM user_token WHERE benutzername = :nutzer";
-        $statement = $pdo->prepare($sql);
-        $statement->execute(array('nutzer' => $benutzername));
-        $token_result = $statement->fetch();
-
-        if($token_result !== false){
-           echo "yxcvyxcvyxcv";
-
-        }else{
-            echo"asdfasdfasdf";
-        }
-
-    }
+   
 
     
 
