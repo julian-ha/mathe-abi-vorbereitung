@@ -23,7 +23,7 @@ if(isset($_GET['register'])) {
     //$email = $_POST['email'];
     $passwort = $_POST['passwort'];
     $passwort2 = $_POST['passwort2'];
-    $benutzername = $_POST['benutzername']
+    $benutzername = $_POST['benutzername'];
 
   
 
