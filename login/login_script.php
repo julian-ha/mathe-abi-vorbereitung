@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
     $sql = "SELECT * FROM benutzer WHERE mail = :email AND passwort = :passwort";
     $statement = $pdo->prepare($sql);
     $statement->execute(array('email' => $email, 'passwort' => $password));
-    $user = statement->fetch();
+   
     
 
 
