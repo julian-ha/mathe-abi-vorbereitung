@@ -37,7 +37,8 @@ if(isset($_GET['register'])) {
     //     $error = true;
     // }
     if($passwort != $passwort2) {
-        echo 'Die Passwörter müssen übereinstimmen<br>';
+        //echo 'Die Passwörter müssen übereinstimmen<br>';
+        $_SESSION['fehler'] = "Die Passwörter müssen übereinstimmen";
         $error = true;
     }
     
@@ -48,7 +49,8 @@ if(isset($_GET['register'])) {
         $user = $statement->fetch();
         
         if($user !== false) {
-            echo 'Diese E-Mail-Adresse ist bereits vergeben<br>';
+            //echo 'Diese E-Mail-Adresse ist bereits vergeben<br>';
+            $_SESSION['fehler'] = "Diese E-Mail-Adresse ist bereits vergeben";
             $error = true;
         }    
     }
@@ -61,10 +63,12 @@ if(isset($_GET['register'])) {
         $result = $statement->execute(array('email' => $_SESSION['email'], 'passwort' => $passwort_hash, 'vorname' => $_SESSION['vorname'], 'nachname' => $_SESSION['nachname'], 'benutzername' => $benutzername));
         
         if($result) {        
-            echo 'Du wurdest erfolgreich registriert. <a href="login.php">Zum Login</a>';
+            //echo 'Du wurdest erfolgreich registriert. <a href="login.php">Zum Login</a>';
+            $_SESSION['fehler'] = "Du wurdest erfolreich registriert";
             $showFormular = false;
         } else {
-            echo 'Beim Abspeichern ist leider ein Fehler aufgetreten<br>';
+            //echo 'Beim Abspeichern ist leider ein Fehler aufgetreten<br>';
+            $_SESSION['fehler'] = "Beim Abspeichern ist leider ein Fehler aufgetreten";
         }
     } 
 }
@@ -75,11 +79,15 @@ if($showFormular) {
 <form action="?register=1" method="post">
 
 Dein Benutzername: <br>
-<input type="text" maxlength="250" name="benutzername" required>
+<input type="text" maxlength="250" name="benutzername" required> <br>
  
 Dein Passwort:<br>
 <input type="password" size="40"  maxlength="250" name="passwort" required><br>
 <input type="password" size="40" maxlength="250" name="passwort2" required><br>
+if(isset($_SESSION['fehler'])){
+    echo "<p>" . $_SESSION['fehler'] . "</p>";
+    unset($_SESSION['fehler']);
+}
  
 <input type="submit" value="Abschicken">
 </form>
