@@ -15,8 +15,16 @@ if(isset($_POST['submit'])){
     $statement->execute(array('nutzer' => $benutzername));
     $user = $statement->fetch();
 
-    echo $user['vorname'];
-    echo $user['anzahl'];
+    if ($user !== false && password_verify($password, $user['passwort'])) {
+        $_SESSION['user'] = $user['benutzername'];
+        $_SESSION['isloggedin'] = true;
+        header('Location https://mathe-abi-vorbereitung.de/')
+        
+    } else {
+        $error = true;
+        $_SESSION['notification'] = "Es wurde kein Benutzer zu den eingegebenen Daten gefunden.";
+    }
+
     
 
 
