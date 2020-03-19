@@ -23,6 +23,7 @@ if(isset($_GET['register'])) {
     //$email = $_POST['email'];
     $passwort = $_POST['passwort'];
     $passwort2 = $_POST['passwort2'];
+    $benutzername = $_POST['benutzername']
 
   
 
@@ -40,24 +41,24 @@ if(isset($_GET['register'])) {
         $error = true;
     }
     
-    //Überprüfe, dass die E-Mail-Adresse noch nicht registriert wurde
-    // if(!$error) { 
-    //     $statement = $pdo->prepare("SELECT * FROM users WHERE email = :email");
-    //     $result = $statement->execute(array('email' => $email));
-    //     $user = $statement->fetch();
+   // Überprüfe, dass der Benutzername noch nicht registriert wurde
+    if(!$error) { 
+        $statement = $pdo->prepare("SELECT * FROM benutzer WHERE benutzername = :benutzername");
+        $result = $statement->execute(array('benutzername' => $benutzername));
+        $user = $statement->fetch();
         
-    //     if($user !== false) {
-    //         echo 'Diese E-Mail-Adresse ist bereits vergeben<br>';
-    //         $error = true;
-    //     }    
-    // }
+        if($user !== false) {
+            echo 'Diese E-Mail-Adresse ist bereits vergeben<br>';
+            $error = true;
+        }    
+    }
     
     //Keine Fehler, wir können den Nutzer registrieren
     if(!$error) {    
         $passwort_hash = password_hash($passwort, PASSWORD_DEFAULT);
         
-        $statement = $pdo->prepare("INSERT INTO benutzer (mail, passwort, vorname, nachname) VALUES (:email, :passwort, :vorname, :nachname)");
-        $result = $statement->execute(array('email' => $_SESSION['email'], 'passwort' => $passwort_hash, 'vorname' => $_SESSION['vorname'], 'nachname' => $_SESSION['nachname']));
+        $statement = $pdo->prepare("INSERT INTO benutzer (mail, passwort, vorname, nachname, benutzername) VALUES (:email, :passwort, :vorname, :nachname, :benutzername)");
+        $result = $statement->execute(array('email' => $_SESSION['email'], 'passwort' => $passwort_hash, 'vorname' => $_SESSION['vorname'], 'nachname' => $_SESSION['nachname'], 'benutzername' => $benutzername));
         
         if($result) {        
             echo 'Du wurdest erfolgreich registriert. <a href="login.php">Zum Login</a>';
@@ -73,7 +74,8 @@ if($showFormular) {
  
 <form action="?register=1" method="post">
 
-
+Dein Benutzername: <br>
+<input type="text" maxlength="250" name="benutzername" required>
  
 Dein Passwort:<br>
 <input type="password" size="40"  maxlength="250" name="passwort" required><br>

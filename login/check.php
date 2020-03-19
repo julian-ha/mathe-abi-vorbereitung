@@ -4,16 +4,22 @@ if(isset($_SESSION['fehlermeldung'])){
     unset($_SESSION['fehlermeldung']);
 }
 include "config.php";
+$pdo = new PDO('mysql:host=188.68.47.203;dbname=k93814_matheAbi', 'k93814_matheAbi', 'Sxt0m25?');
+
 echo "Test";
 if(isset($_POST['submit'])){
 
 echo "Test";
- $email = mysqli_real_escape_string($con,$_POST['email']);
+ //$email = mysqli_real_escape_string($con,$_POST['email']);
+ $email = $_POST['email'];
  echo $email . "<br>";
- $password = mysqli_real_escape_string($con,$_POST['passwort']);
+ //$password = mysqli_real_escape_string($con,$_POST['passwort']);
+ $password = $_POST['password'];
+
  echo $password . "<br>";
 
-
+//Login Überprüfung
+$sql = "SELECT * from benutzer "
   $sql_query = "select id, count(*) as cntUser from benutzer where mail='".$email."' and passwort='".$password."' GROUP BY id";
   $result = mysqli_query($con,$sql_query);
   $row = mysqli_fetch_array($result);
