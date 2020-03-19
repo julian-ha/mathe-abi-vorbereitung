@@ -5,7 +5,7 @@ $pdo = new PDO('mysql:host=188.68.47.203;dbname=k93814_matheAbi', 'k93814_matheA
 
 if(isset($_POST['submit'])){
     $email = $_POST['email'];
-    $password = $_POST['password'];
+    $password = $_POST['passwort'];
 
     //Überprüfung mit Datenbank
     $sql = "SELECT * FROM benutzer WHERE mail = :email AND passwort = :passwort";
