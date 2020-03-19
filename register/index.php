@@ -84,10 +84,12 @@ Dein Benutzername: <br>
 Dein Passwort:<br>
 <input type="password" size="40"  maxlength="250" name="passwort" required><br>
 <input type="password" size="40" maxlength="250" name="passwort2" required><br>
+<?php
 if(isset($_SESSION['fehler'])){
     echo "<p>" . $_SESSION['fehler'] . "</p>";
     unset($_SESSION['fehler']);
 }
+?>
  
 <input type="submit" value="Abschicken">
 </form>
