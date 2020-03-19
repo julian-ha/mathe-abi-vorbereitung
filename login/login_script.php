@@ -8,10 +8,13 @@ if(isset($_POST['submit'])){
     $password = $_POST['passwort'];
 
     //Überprüfung mit Datenbank
-    $sql = "SELECT * FROM benutzer WHERE mail = :email AND passwort = :passwort";
+    $sql = "SELECT *, COUNT(*) as anzahl FROM benutzer WHERE mail = :email AND passwort = :passwort";
     $statement = $pdo->prepare($sql);
     $statement->execute(array('email' => $email, 'passwort' => $password));
-   
+    $user = $statement->fetch();
+
+    echo $user['vorname'];
+    echo $user['anzahl'];
     
 
 
