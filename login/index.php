@@ -9,7 +9,7 @@ session_start();
 
     <body>
         <form action="login_script.php" method="POST">
-        <input type="mail" name="email" required><br>
+        <input type="text" name="benutzer" required><br>
         <input type="password" name="passwort" required><br>
         
         <?php if(isset($_SESSION['fehlermeldung'])){
