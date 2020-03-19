@@ -5,7 +5,7 @@ $pdo = new PDO('mysql:host=188.68.47.203;dbname=k93814_matheAbi', 'k93814_matheA
 
 if(isset($_POST['submit'])){
     $benutzername = $_POST['benutzer'];
-    echo $benutzer . "<br>";
+    echo $benutzername . "<br>";
     $password = $_POST['passwort'];
     echo $password . "<br>";
 
