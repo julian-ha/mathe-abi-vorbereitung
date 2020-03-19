@@ -17,6 +17,7 @@ echo "Test";
   $sql_query = "select id, count(*) as cntUser from benutzer where mail='".$email."' and passwort='".$password."' GROUP BY id";
   $result = mysqli_query($con,$sql_query);
   $row = mysqli_fetch_array($result);
+  echo $row;
 
   $count = $row[0]['cntUser'];
   echo $count;
