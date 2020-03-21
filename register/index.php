@@ -158,7 +158,7 @@ if(isset($_SESSION['fehler'])){
 }
 ?>
 
-                            <input class="button is-primary" type="submit" value="Registrieren">
+                            <input class="button is-primary" type="submit" value="<strong>Weiter</strong>">
     </form>
     <br>
     <p>Du wirst danach direkt auf die Stream Seite geleitet. <br> Du kannst dir diese gern als Favorit
