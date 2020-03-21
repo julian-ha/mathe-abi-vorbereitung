@@ -111,8 +111,13 @@ if($showFormular) {
                         Dein Kauf war erfolgreich
                     </h1>
                     <h2 class="subtitle">
-                        Gib nun einen Benutzernamen und ein Passwort ein
+                        Gib nun einen Benutzernamen und ein Passwort ein. <br> Wir senden dir eine E-Mail mit deinem
+                        Passwort
+                        und deinem Benutzernamen.
                     </h2>
+                    <p>Du wirst danach direkt auf die Stream Seite geleitet. <br> Du kannst dir diese gern als Favorit
+                        in
+                        deinem Browser speichern</p>
                     <div class="columns">
                         <div class="column register-form">
                             <div class="field">
@@ -131,7 +136,7 @@ if($showFormular) {
                                     <input class="input is-primary" type="password" placeholder="Wähle ein Passswort"
                                         value="" maxlength="250" name="passwort" required />
                                     <span class="icon is-small is-left">
-                                        <i class="fas fa-key"></i>                                    </span>
+                                        <i class="fas fa-key"></i> </span>
                                 </div>
                                 <br />
                                 <div class="control has-icons-left has-icons-right">
@@ -143,43 +148,43 @@ if($showFormular) {
                                     </span>
                                 </div>
                             </div>
-                            <p class="subtitle is-6">Die Abbuchung erfolgt durch Digistore24</p>
-                            <a href="">Impressum</a>
-                        
+                            <p class="subtitle is-7">Die Abbuchung erfolgt durch Digistore24</p>
 
 
 
-        <?php
+
+                            <?php
 if(isset($_SESSION['fehler'])){
     echo "<p>" . $_SESSION['fehler'] . "</p>";
     unset($_SESSION['fehler']);
 }
 ?>
 
-        <input class="button is-primary" type="submit" value="Registrieren">
+                            <input class="button is-primary" type="submit" value="Registrieren">
     </form>
-</div>
-</div>
-</div>
-</div>
-</section>
-<div class="imprint">
-    <section class="section">
-      <div class="container">
-        <h3 class="title is-5 has-text-weight-bold">
-          Informationen
-        </h3>
-        <hr>
-        <ul>
-          <li><a href="https://mathe-abi-vorbereitung.de/impressum.html">Impressum</a></li>
-          <li><a href="https://mathe-abi-vorbereitung.de/datenschutzerklaerung.html">Datenschutzerklärung</a></li>
-          <li><a href="https://augustin-heidenheim.de/">Über uns</a></li>
-          <li><a href="https://augustin-heidenheim.de/">Nachhilfe Schule</a></li>
-        </ul>
-  
-      </div>
+    </div>
+    </div>
+    </div>
+    </div>
     </section>
-  </div>
+    <div class="imprint">
+        <section class="section">
+            <div class="container">
+                <h3 class="title is-5 has-text-weight-bold">
+                    Informationen
+                </h3>
+                <hr>
+                <ul>
+                    <li><a href="https://mathe-abi-vorbereitung.de/impressum.html">Impressum</a></li>
+                    <li><a href="https://mathe-abi-vorbereitung.de/datenschutzerklaerung.html">Datenschutzerklärung</a>
+                    </li>
+                    <li><a href="https://augustin-heidenheim.de/">Über uns</a></li>
+                    <li><a href="https://augustin-heidenheim.de/">Nachhilfe Schule</a></li>
+                </ul>
+
+            </div>
+        </section>
+    </div>
 
     <?php
 } //Ende von if($showFormular)
