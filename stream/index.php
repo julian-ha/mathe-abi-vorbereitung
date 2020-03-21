@@ -105,7 +105,9 @@ console.log(benutzername);
                         <p class=" has-text-light">
                             Solltest du Probleme mit dem Stream haben klicke hier:
                         </p>
-                        <a class="has-text-primary" href="">Ich habe ein Problem mit dem Stream</a>
+                        <a class="has-text-primary"
+                            href="https://docs.google.com/document/d/1EvLmFQNcrs60iSV2ffv93BOj43SDHgGpB2zDoObK2Rg/edit?usp=sharing">Ich
+                            habe ein Problem mit dem Stream</a>
                     </div>
                 </div>
             </div>
