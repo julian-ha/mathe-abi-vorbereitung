@@ -16,7 +16,7 @@ $pdo = new PDO('mysql:host=188.68.47.203;dbname=k93814_matheAbi', 'k93814_matheA
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mathe-Abi-Vorbereitung</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
-    <link rel="stylesheet" href="includes/style.css" />
+    <link rel="stylesheet" href="../includes/style.css" />
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 
