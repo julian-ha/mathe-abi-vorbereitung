@@ -12,7 +12,7 @@ function checktoken(){
       xmlhttp.open('GET', "../settings/gettoken.php?nutzer=test", true);
       xmlhttp.send();
       console.log('wurde getestet');
-      setTimeout(testcall, 60000);
+      setTimeout(checktoken, 60000);
 }
 
 window.addEventListener("DOMContentLoaded", function() {
