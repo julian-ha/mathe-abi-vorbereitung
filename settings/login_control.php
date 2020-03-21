@@ -20,7 +20,7 @@ $_SESSION['token'];
         $statement->execute(array('benutzer' => $_SESSION['benutzername']));
         $token = $statement->fetch();
         if($token['token'] !== $_SESSION['token']){
-            echo "tokens stimmen nicht überein, du solltest eig ausgeloggt werden";
+            header('Location: https://www.mathe-abi-vorbereitung.de');
         }
 
         
