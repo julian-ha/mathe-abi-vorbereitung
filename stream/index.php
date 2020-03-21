@@ -28,7 +28,7 @@ console.log(benutzername);
     <nav class="navbar nav-black" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://mathe-abi-vorbereitung.de">
-                <p><strong>Mathe-Abi-Vorbereitung</strong></p>
+                <p class="color-red"><strong>Mathe-Abi-Vorbereitung</strong></p>
             </a>
 
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
@@ -55,7 +55,7 @@ console.log(benutzername);
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-light" href="/logout/">
+                        <a class="button is-primary is-small is-rounded" href="/logout/">
                             Logout
                         </a>
                     </div>
@@ -66,27 +66,83 @@ console.log(benutzername);
 
     <div class="info-section stream-container">
         <section class="section ">
-            <div class="container has-text-centered is-centered">
+            <div class="container">
                 <h2 class="title is-4 has-text-weight-bold has-text-light">
                     Willkommen zur Mathe-Abi-Vorbereitung
                 </h2>
                 <p class="subtitle is-6 has-text-light">
-                    Wir empfehlen dir den Stream auf Vollbild anzusehen: Doppelklick in
-                    den Stream für Vollbild
+                    Wir bereiten dich auf das Abi vor!
                 </p>
+
                 <iframe id="ytplayer" type="text/html" width="100%" height="500"
                     src="https://www.youtube-nocookie.com/embed/OZjFVFW8UJY?&controls=0&rel=0&showinfo=0&modestbranding=1"
                     frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
         <section class="section">
-            <div class="container has-text-centered is-centered">
-                <h2 class="title is-4 has-text-weight-bold has-text-light">
-                    Zeit für deine Fragen
-                </h2>
-                <textarea name="" id="frage" cols="100" rows="10"></textarea>
-                <br />
-                <button class="button is-primary" onclick="sendMessage()"><strong>Absenden</strong></button>
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <h2 class="title is-4 has-text-weight-bold has-text-light">
+                            Zeit für deine Fragen
+                        </h2>
+                        <textarea class="textarea" name="" id="frage" cols="100" rows="10"
+                            placeholder="Stell eine Frage..."></textarea>
+                        <br />
+                        <button class="button is-primary">
+                            <strong>Absenden</strong>
+                        </button>
+                    </div>
+                    <div class="column">
+                        <h2 class="title is-4 has-text-weight-bold has-text-light">
+                            Funktionen & Hilfe
+                        </h2>
+                        <ul>
+                            <li class=" has-text-light">
+                                Doppelklick auf Stream = Vollbild
+                            </li>
+                        </ul>
+                        <p class=" has-text-light">
+                            Solltest du Probleme mit dem Stream haben klicke hier:
+                        </p>
+                        <a class="has-text-primary" href="">Ich habe ein Problem mit dem Stream</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h3 class="title is-4 has-text-weight-bold has-text-light">
+                    Natürlich kannst du uns auch eine Mail schreiben
+                </h3>
+                <a class="has-text-primary" href="">Neue Mail verfassen</a>
+            </div>
+        </section>
+    </div>
+
+    <div class="imprint">
+        <section class="section">
+            <div class="container">
+                <h3 class="title is-5 has-text-weight-bold">
+                    Informationen
+                </h3>
+                <hr />
+                <ul>
+                    <li>
+                        <a class="has-text-primary"
+                            href="https://mathe-abi-vorbereitung.de/impressum.html">Impressum</a>
+                    </li>
+                    <li>
+                        <a class="has-text-primary"
+                            href="https://mathe-abi-vorbereitung.de/datenschutzerklaerung.html">Datenschutzerklärung</a>
+                    </li>
+                    <li>
+                        <a class="has-text-primary" href="https://augustin-heidenheim.de/">Über uns</a>
+                    </li>
+                    <li>
+                        <a class="has-text-primary" href="https://augustin-heidenheim.de/">Nachhilfe Schule</a>
+                    </li>
+                </ul>
             </div>
         </section>
     </div>
