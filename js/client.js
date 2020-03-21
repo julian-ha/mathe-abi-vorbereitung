@@ -30,4 +30,5 @@ function sendMessage(){
         }
     };
     xmlhttp.open('GET', "../settings/send_message.php?benutzername=" + benutzername + "&inhalt=" + inhalt);
+    xmlhttp.send();
 }
