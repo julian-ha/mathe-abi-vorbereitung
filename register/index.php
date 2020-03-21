@@ -113,7 +113,7 @@ if($showFormular) {
                     <h2 class="subtitle">
                         Gib nun einen Benutzernamen und ein Passwort ein. <br> <span class="subtitle is-7">Wir senden
                             dir eine E-Mail mit
-                            deinem
+                            deinems
                             Passwort
                             und deinem Benutzernamen.</span>
                     </h2>
