@@ -49,12 +49,9 @@ include('../settings/login_control.php');
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <a
-            href="https://mathe-abi-vorbereitung.de/#tutor-info"
-            class="navbar-item"
-          >
+          <!-- <a href="https://mathe-abi-vorbereitung.de/" class="navbar-item">
             Startseite
-          </a>
+          </a> -->
           <!-- <a
             href="https://mathe-abi-vorbereitung.de/#tutor-info"
             class="navbar-item"
@@ -76,7 +73,7 @@ include('../settings/login_control.php');
     </nav>
 
     <div class="info-section">
-      <section class="section">
+      <section class="section video-container">
         <div class="container has-text-centered is-centered">
           <h2 class="title is-3 has-text-weight-bold">
             Willkommen zum Stream
@@ -84,7 +81,7 @@ include('../settings/login_control.php');
           <iframe
             id="ytplayer"
             type="text/html"
-            width="640"
+            width="100%"
             height="360"
             src="https://www.youtube-nocookie.com/embed/OZjFVFW8UJY?&controls=0&rel=0&showinfo=0&modestbranding=1"
             frameborder="0"
