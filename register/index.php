@@ -111,9 +111,11 @@ if($showFormular) {
                         Dein Kauf war erfolgreich
                     </h1>
                     <h2 class="subtitle">
-                        Gib nun einen Benutzernamen und ein Passwort ein. <br> Wir senden dir eine E-Mail mit deinem
-                        Passwort
-                        und deinem Benutzernamen.
+                        Gib nun einen Benutzernamen und ein Passwort ein. <br> <span class="subtitle is-7">Wir senden
+                            dir eine E-Mail mit
+                            deinem
+                            Passwort
+                            und deinem Benutzernamen.</span>
                     </h2>
 
                     <div class="columns">
