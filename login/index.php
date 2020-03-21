@@ -49,6 +49,7 @@ session_start();
                                 <br />
 
                             </div>
+                            <input class="button is-primary" type="submit" name="submit" value="Abschicken">
                         </div>
                     </div>
                 </div>
@@ -61,7 +62,7 @@ session_start();
             echo "<p>". $_SESSION['notification']. "</p>";
             unset($_SESSION['notification']);
         } ?>
-    <input type="submit" name="submit" value="Abschicken">
+
 
 
 </body>
