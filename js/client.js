@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", function() {
 }, false);
 
 function sendMessage(){
-    var inhalt = document.getElementById('frage').value;
+    var inhalt = document.getElementById('frage');
     console.log(inhalt);
     console.log('Message wird gesendet');
     xmlhttp = new XMLHttpRequest();
@@ -27,8 +27,9 @@ function sendMessage(){
     xmlhttp.onreadystatechange = function() {
         if(this.readyState == 4 && this.status == 200) {
             console.log(this.responseText);
+            inhalt.value = "";
         }
     };
-    xmlhttp.open('GET', "../settings/send_message.php?benutzername=" + benutzername + "&inhalt=" + inhalt);
+    xmlhttp.open('GET', "../settings/send_message.php?benutzername=" + benutzername + "&inhalt=" + inhalt.value);
     xmlhttp.send();
 }
