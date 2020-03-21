@@ -137,7 +137,7 @@ if($showFormular) {
                                 <br />
                                 <div class="control has-icons-left has-icons-right">
                                     <input class="input is-primary" type="password"
-                                        placeholder="Bestätige dein Passswort" value="" maxlength="250" name="passwort"
+                                        placeholder="Bestätige dein Passswort" value="" maxlength="250" name="passwort2"
                                         required />
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-user"></i>
