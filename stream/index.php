@@ -1,3 +1,7 @@
+<?php
+session_start();
+include('../settings/login_control.php');
+?>
 <!DOCTYPE html>
 <html>
   <head>

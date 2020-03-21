@@ -15,9 +15,7 @@ if(isset($_POST['submit'])){
 
     if ($user !== false && password_verify($password, $user['passwort'])) {
         $_SESSION['user'] = $user['benutzername'];
-        $_SESSION['isloggedin'] = true;
-        
-        
+        $_SESSION['isloggedin'] = true; 
     } else {
         $error = true;
         $_SESSION['notification'] = "Es wurde kein Benutzer zu den eingegebenen Daten gefunden.";
@@ -53,7 +51,7 @@ if(isset($_POST['submit'])){
         $_SESSION['token'] = $token;
         $_SESSION['benutzername'] = $benutzername;
         $_SESSION['isloggedin'] = true;
-        header('Location: https://mathe-abi-vorbereitung.de/');
+        header('Location: https://mathe-abi-vorbereitung.de/stream/');
 
     }
 
