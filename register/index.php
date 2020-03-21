@@ -144,6 +144,7 @@ if($showFormular) {
                                 </div>
                             </div>
                             <p class="subtitle is-6">Die Abbuchung erfolgt durch Digistore24</p>
+                            <a href="">Impressum</a>
                         
 
 
