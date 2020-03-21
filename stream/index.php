@@ -44,10 +44,18 @@ include('../settings/login_control.php');
       <div class="container">
         <div class="columns">
           <div class="column is-full">
-            <h4>asdfasdf</h4>
+            <a href="" class="button" onclick="testcall()">Testbutton</a>
+            <h4 id="test">asdfasdf</h4>
           </div>
         </div>
       </div>
     </section>
   </body>
 </html>
+
+<script>
+function testcall(){
+  document.getElementById('test').value = "mimimimimimi";
+}
+
+</script>
