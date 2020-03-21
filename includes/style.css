@@ -11,3 +11,7 @@
 .five-section {
   background-color: rgb(240, 240, 240);
 }
+.register-form {
+  max-width: 300px;
+  margin: auto;
+}
