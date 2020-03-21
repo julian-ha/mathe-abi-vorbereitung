@@ -144,11 +144,7 @@ if($showFormular) {
                                     </span>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                        
 
 
 
@@ -161,6 +157,11 @@ if(isset($_SESSION['fehler'])){
 
         <input class="button is-primary" type="submit" value="Registrieren">
     </form>
+</div>
+</div>
+</div>
+</div>
+</section>
 
     <?php
 } //Ende von if($showFormular)
