@@ -59,6 +59,25 @@ session_start();
                 </div>
             </div>
         </section>
+        <div class="imprint">
+            <section class="section">
+                <div class="container">
+                    <h3 class="title is-5 has-text-weight-bold">
+                        Informationen
+                    </h3>
+                    <hr>
+                    <ul>
+                        <li><a href="https://mathe-abi-vorbereitung.de/impressum.html">Impressum</a></li>
+                        <li><a
+                                href="https://mathe-abi-vorbereitung.de/datenschutzerklaerung.html">Datenschutzerklärung</a>
+                        </li>
+                        <li><a href="https://augustin-heidenheim.de/">Über uns</a></li>
+                        <li><a href="https://augustin-heidenheim.de/">Nachhilfe Schule</a></li>
+                    </ul>
+
+                </div>
+            </section>
+        </div>
     </form>
 
 
