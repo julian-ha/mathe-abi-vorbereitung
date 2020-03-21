@@ -30,8 +30,8 @@ session_start();
                             <div class="field">
                                 <label class="label">Benutzername</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-primary" type="text" placeholder="Wähle einen Benutzernamen"
-                                        value="" name="benutzer" required />
+                                    <input class="input is-primary" type="text"
+                                        placeholder="Gib deinen Benutzernamen ein" value="" name="benutzer" required />
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-user"></i>
                                     </span>
@@ -40,7 +40,7 @@ session_start();
                             <div class="field">
                                 <label class="label">Passwort</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-primary" type="password" placeholder="Wähle ein Passswort"
+                                    <input class="input is-primary" type="password" placeholder="Gib dein Passwort ein"
                                         value="" name="passwort" required />
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-user"></i>
