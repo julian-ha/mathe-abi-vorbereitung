@@ -38,5 +38,16 @@ include('../settings/login_control.php');
         </div>
       </section>
     </div>
+
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-full">
+            <h4>asdfasdf</h4>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
