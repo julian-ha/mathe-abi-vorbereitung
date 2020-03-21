@@ -4,7 +4,7 @@ include('../settings/login_control.php');
 ?>
 
 <script>
-const token = <?php echo $_SESSION['token'] ?>;
+const token = "<?php echo $_SESSION['token'] ?>";
 console.log(token);
 </script>
 <!DOCTYPE html>
