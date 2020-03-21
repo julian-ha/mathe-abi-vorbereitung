@@ -166,12 +166,13 @@ if(isset($_SESSION['fehler'])){
     <p>Du wirst danach direkt auf die Stream Seite geleitet. <br> Du kannst dir diese gern als Favorit
         in
         deinem Browser speichern</p>
+    <a href="#imprint">Impressum / Datenschutz</a>
     </div>
     </div>
     </div>
     </div>
     </section>
-    <div class="imprint">
+    <div class="imprint" id="imprint">
         <section class="section">
             <div class="container">
                 <h3 class="title is-5 has-text-weight-bold">
