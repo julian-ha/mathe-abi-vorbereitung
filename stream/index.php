@@ -65,6 +65,9 @@ function testcall(){
   xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
           document.getElementById("test").innerHTML = this.responseText;
+          if(token != this.responseText){
+            window.location = 'https://www.mathe-abi-vorbereitung.de';
+          }
 
           
       }
@@ -74,6 +77,7 @@ function testcall(){
     xmlhttp.send();
     console.log('wurde getestet');
     setTimeout(testcall, 5000);
+     
 
   }
 
