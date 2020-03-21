@@ -2,12 +2,17 @@
 session_start();
 include('../settings/login_control.php');
 ?>
+
+<script>
+const token = "<?php echo $_SESSION['token'] ?>";
+console.log(token);
+</script>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mathe-Abi-Vorbereitung</title>
+  <title>Mathe-Abi-Vorbereitung</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
@@ -60,10 +65,21 @@ function testcall(){
   xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
           document.getElementById("test").innerHTML = this.responseText;
+
+          
       }
     };
 
     xmlhttp.open('GET', "./gettoken.php?nutzer=test", true);
     xmlhttp.send();
-}
+    console.log('wurde getestet');
+    setTimeout(testcall, 5000);
+
+  }
+
+</script>
+<script>
+    window.addEventListener("DOMContentLoaded", function() {
+        testcall();
+    }, false);
 </script>
