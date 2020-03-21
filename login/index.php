@@ -49,7 +49,7 @@ session_start();
                                 <br />
 
                             </div>
-                            <input class="button is-primary" type="submit" name="submit" value="Abschicken">
+                            <input class="button is-primary" type="submit" name="submit" value="Login">
                         </div>
                     </div>
                 </div>
