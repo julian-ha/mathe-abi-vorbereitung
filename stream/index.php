@@ -59,7 +59,7 @@ function testcall(){
 
   xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-          document.getElementById("txtHint").innerHTML = this.responseText;
+          document.getElementById("test").innerHTML = this.responseText;
       }
     };
 
