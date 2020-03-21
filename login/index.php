@@ -41,19 +41,6 @@ session_start();
                     Kursdaten
                 </a>
             </div>
-
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-primary" href="#kurse-und-daten">
-                            <strong>Teilnehmen</strong>
-                        </a>
-                        <a class="button is-light" href="/login/">
-                            Anmelden
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
     </nav>
 
