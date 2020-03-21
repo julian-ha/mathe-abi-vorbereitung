@@ -5,7 +5,9 @@ include('../settings/login_control.php');
 <!-- man muss immer den Token in die Variable laden-->
 <script>
 const token = "<?php echo $_SESSION['token'] ?>";
+const benutzername = "<?php echo $_SESSION['benutzername'] ?>";
 console.log(token);
+console.log(benutzername);
 </script>
 
 <!DOCTYPE html>
@@ -84,7 +86,7 @@ console.log(token);
                 </h2>
                 <textarea name="" id="frage" cols="100" rows="10"></textarea>
                 <br />
-                <button class="button is-primary"><strong>Absenden</strong></button>
+                <button class="button is-primary" onclick="sendMessage()"><strong>Absenden</strong></button>
             </div>
         </section>
     </div>
