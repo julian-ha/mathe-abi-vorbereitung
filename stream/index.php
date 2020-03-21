@@ -44,7 +44,7 @@ include('../settings/login_control.php');
       <div class="container">
         <div class="columns">
           <div class="column is-full">
-            <a href="" class="button" onclick="testcall()">Testbutton</a>
+            <button class="button is-primary" onclick="testcall()">Testbutton</button>
             <h4 id="test">asdfasdf</h4>
           </div>
         </div>
