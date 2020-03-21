@@ -20,6 +20,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
 function sendMessage(){
     var inhalt = document.getElementById('frage').value;
+    console.log(inhalt);
     console.log('Message wird gesendet');
     xmlhttp = new XMLHttpRequest();
 
