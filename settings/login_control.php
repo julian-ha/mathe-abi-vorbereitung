@@ -12,18 +12,20 @@ $_SESSION['token'];
         session_destroy();
         header('Location: https://www.mathe-abi-vorbereitung.de');
     }
+    else{
+        // Auto Log-out bei mehrfachem login
+
+        $sql = "SELECT token FROM user_token WHERE benutzername = :benutzer";
+        $statement = $pdo->prepare($sql);
+        $statement->execute(array('benutzer' => $_SESSION['benutzername']));
+        $token = $statement->fetch();
+
+        echo "Token aus der Datenbank: " . $token['token'] . "<br>";
+        echo "Token aus der Session: " . $_SESSION['token'] . "<br>";
+    }
 
 
-// Auto Log-out bei mehrfachem login
 
-
-$sql = "SELECT token FROM user_token WHERE benutzername = :benutzer";
-$statement = $pdo->prepare($sql);
-$statement->execute(array('benutzer' => $_SESSION['benutzername']));
-$token = $statement->fetch();
-
-echo "Token aus der Datenbank: " . $token['token'] . "<br>";
-echo "Token aus der Session: " . $_SESSION['token'] . "<br>";
 
 
 ?>
