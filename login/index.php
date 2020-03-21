@@ -49,6 +49,10 @@ session_start();
                                 <br />
 
                             </div>
+                            <?php if(isset($_SESSION['notification'])){
+                                echo "<p>". $_SESSION['notification']. "</p>";
+                                unset($_SESSION['notification']);
+                            } ?>
                             <input class="button is-primary" type="submit" name="submit" value="Login">
                         </div>
                     </div>
@@ -58,10 +62,7 @@ session_start();
     </form>
 
 
-    <?php if(isset($_SESSION['notification'])){
-            echo "<p>". $_SESSION['notification']. "</p>";
-            unset($_SESSION['notification']);
-        } ?>
+
 
 
 
