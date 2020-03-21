@@ -5,7 +5,9 @@ include('../settings/login_control.php');
 <!-- man muss immer den Token in die Variable laden-->
 <script>
 const token = "<?php echo $_SESSION['token'] ?>";
+const benutzername = "<?php echo $_SESSION['benutzername'] ?>";
 console.log(token);
+console.log(benutzername);
 </script>
 
 <!DOCTYPE html>
