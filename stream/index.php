@@ -72,7 +72,7 @@ include('../settings/login_control.php');
       </div>
     </nav>
 
-    <div class="info-section video-container">
+    <div class="info-section stream-container">
       <section class="section ">
         <div class="container has-text-centered is-centered">
           <h2 class="title is-3 has-text-weight-bold">
