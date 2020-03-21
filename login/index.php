@@ -15,6 +15,48 @@ session_start();
 </head>
 
 <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://mathe-abi-vorbereitung.de">
+                <p><strong>Mathe-Abi-Vorbereitung</strong></p>
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="https://mathe-abi-vorbereitung.de/#tutor-info" class="navbar-item">
+                    Dein Lehrer
+                </a>
+                <a href="https://mathe-abi-vorbereitung.de/#kurse-und-daten" class="navbar-item">
+                    Kursdaten
+                </a>
+                <a href="https://mathe-abi-vorbereitung.de/#ablauf" class="navbar-item">
+                    Kursdaten
+                </a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary" href="#kurse-und-daten">
+                            <strong>Teilnehmen</strong>
+                        </a>
+                        <a class="button is-light" href="/login/">
+                            Anmelden
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <form action="login_script.php" method="POST">
         <section class="hero is-light is-fullheight">
             <div class="hero-body">
