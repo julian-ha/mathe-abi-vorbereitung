@@ -131,8 +131,7 @@ if($showFormular) {
                                     <input class="input is-primary" type="password" placeholder="Wähle ein Passswort"
                                         value="" maxlength="250" name="passwort" required />
                                     <span class="icon is-small is-left">
-                                        <i class="fas fa-user"></i>
-                                    </span>
+                                        <i class="fas fa-key"></i>                                    </span>
                                 </div>
                                 <br />
                                 <div class="control has-icons-left has-icons-right">
@@ -140,7 +139,7 @@ if($showFormular) {
                                         placeholder="Bestätige dein Passswort" value="" maxlength="250" name="passwort2"
                                         required />
                                     <span class="icon is-small is-left">
-                                        <i class="fas fa-user"></i>
+                                        <i class="fas fa-key"></i>
                                     </span>
                                 </div>
                             </div>
