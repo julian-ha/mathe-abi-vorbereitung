@@ -115,9 +115,7 @@ if($showFormular) {
                         Passwort
                         und deinem Benutzernamen.
                     </h2>
-                    <p>Du wirst danach direkt auf die Stream Seite geleitet. <br> Du kannst dir diese gern als Favorit
-                        in
-                        deinem Browser speichern</p>
+
                     <div class="columns">
                         <div class="column register-form">
                             <div class="field">
@@ -162,6 +160,10 @@ if(isset($_SESSION['fehler'])){
 
                             <input class="button is-primary" type="submit" value="Registrieren">
     </form>
+    <br>
+    <p>Du wirst danach direkt auf die Stream Seite geleitet. <br> Du kannst dir diese gern als Favorit
+        in
+        deinem Browser speichern</p>
     </div>
     </div>
     </div>
