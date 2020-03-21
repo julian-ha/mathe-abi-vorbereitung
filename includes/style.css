@@ -4,6 +4,8 @@
 .video-container {
   margin: auto;
   max-width: 700px;
+
+  background-color: rgb(240, 240, 240);
 }
 .tre-section {
   background-color: rgb(240, 240, 240);
