@@ -65,5 +65,14 @@ function testcall(){
 
     xmlhttp.open('GET', "./gettoken.php?nutzer=test", true);
     xmlhttp.send();
-}
+
+    setTimeout(testcall(), 5000);
+
+  }
+
+</script>
+<script>
+    window.addEventListener("DOMContentLoaded", function() {
+        testcall();
+    }, false);
 </script>
