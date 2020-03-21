@@ -2,6 +2,11 @@
 session_start();
 include('../settings/login_control.php');
 ?>
+
+<script>
+const token = <?php echo $_SESSION['token'] ?>;
+console.log(token);
+</script>
 <!DOCTYPE html>
 <html>
   <head>
@@ -60,6 +65,8 @@ function testcall(){
   xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
           document.getElementById("test").innerHTML = this.responseText;
+
+          window.location = "https://www.mathe-abi-vorbereitung.de"
       }
     };
 
