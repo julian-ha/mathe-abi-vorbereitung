@@ -3,7 +3,6 @@ function checktoken(){
   
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("test").innerHTML = this.responseText;
             if(token != this.responseText){
               window.location = 'https://www.mathe-abi-vorbereitung.de';
             }     
