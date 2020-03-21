@@ -55,7 +55,7 @@ include('../settings/login_control.php');
 
 <script>
 function testcall(){
-  document.getElementById('test').value = "mimimimimimi";
+  document.getElementById('test').innerHTML = "mimimimimimi";
 }
 
 </script>
