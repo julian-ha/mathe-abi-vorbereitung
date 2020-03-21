@@ -17,3 +17,15 @@ function checktoken(){
 window.addEventListener("DOMContentLoaded", function() {
     checktoken();
 }, false);
+
+function sendMessage(){
+    var inhalt = document.getElementById('frage').value;
+    xmlhttp = new XMLHttpRequest();
+
+    xmlhttp.onreadystatechange = function() {
+        if(this.readyState == 4 && this.status == 200) {
+            console.log(this.responseText);
+        }
+    };
+    xmlhttp.open('GET', "../settings/send_message.php?benutzername=" + benutzername + "&inhalt=" + inhalt);
+}

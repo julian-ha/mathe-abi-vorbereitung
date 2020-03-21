@@ -86,7 +86,7 @@ console.log(benutzername);
                 </h2>
                 <textarea name="" id="frage" cols="100" rows="10"></textarea>
                 <br />
-                <button class="button is-primary"><strong>Absenden</strong></button>
+                <button class="button is-primary" onclick="sendMessage()"><strong>Absenden</strong></button>
             </div>
         </section>
     </div>
