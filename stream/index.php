@@ -46,18 +46,6 @@ console.log(token);
         </div>
       </section>
     </div>
-
-
-    <section class="section">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-full">
-            <button class="button is-primary" onclick="testcall()">Testbutton</button>
-            <h4 id="test">asdfasdf</h4>
-          </div>
-        </div>
-      </div>
-    </section>
   </body>
 </html>
 

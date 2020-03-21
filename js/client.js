@@ -9,7 +9,7 @@ function checktoken(){
             }     
         }
       };
-      xmlhttp.open('GET', "./gettoken.php?nutzer=test", true);
+      xmlhttp.open('GET', "../settings/gettoken.php?nutzer=test", true);
       xmlhttp.send();
       console.log('wurde getestet');
       setTimeout(testcall, 60000);
