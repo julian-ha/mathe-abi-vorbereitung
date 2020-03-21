@@ -12,7 +12,7 @@ console.log(token);
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mathe-Abi-Vorbereitung</title>
+  <title>Mathe-Abi-Vorbereitung</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
@@ -66,7 +66,7 @@ function testcall(){
       if (this.readyState == 4 && this.status == 200) {
           document.getElementById("test").innerHTML = this.responseText;
 
-          window.location = "https://www.mathe-abi-vorbereitung.de"
+          
       }
     };
 
