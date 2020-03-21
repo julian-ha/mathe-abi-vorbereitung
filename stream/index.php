@@ -63,7 +63,7 @@ function testcall(){
       }
     };
 
-    xmlhttp.open('GET', "gettoken.php?nutzer=test", true);
+    xmlhttp.open('GET', "./gettoken.php?nutzer=test", true);
     xmlhttp.send();
 }
 </script>
