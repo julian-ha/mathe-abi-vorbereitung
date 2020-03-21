@@ -53,7 +53,7 @@ if(isset($_POST['submit'])){
         $_SESSION['token'] = $token;
         $_SESSION['benutzername'] = $benutzername;
         $_SESSION['isloggedin'] = true;
-        header('Location: https://mathe-abi-vorbereitung.de/');
+        header('Location: https://mathe-abi-vorbereitung.de/stream/');
 
     }
 
