@@ -89,7 +89,7 @@ console.log(benutzername);
                         <textarea class="textarea" name="" id="frage" cols="100" rows="10"
                             placeholder="Stell eine Frage..."></textarea>
                         <br />
-                        <button class="button is-primary">
+                        <button class="button is-primary" onclick="sendMessage()">
                             <strong>Absenden</strong>
                         </button>
                     </div>
