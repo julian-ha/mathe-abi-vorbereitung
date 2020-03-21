@@ -23,7 +23,7 @@ console.log(token);
 </head>
 
 <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar nav-black" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://mathe-abi-vorbereitung.de">
                 <p><strong>Mathe-Abi-Vorbereitung</strong></p>

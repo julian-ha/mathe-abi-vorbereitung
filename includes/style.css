@@ -20,6 +20,13 @@
 .tutor-info {
   background-color: rgb(240, 240, 240);
 }
+.nav-black {
+  background-color: black;
+}
 .stream-container {
   background-color: #000000;
+}
+.color-red {
+  color: #ececec !important;
+  font-size: 14px;
 }
