@@ -1,6 +1,6 @@
 function checktoken(){
     xmlhttp = new XMLHttpRequest();
-  
+    console.log("Nutzer ist eingeloggt: " + benutzername);
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             if(token != this.responseText){
