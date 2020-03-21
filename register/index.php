@@ -111,9 +111,11 @@ if($showFormular) {
                         Dein Kauf war erfolgreich
                     </h1>
                     <h2 class="subtitle">
-                        Gib nun einen Benutzernamen und ein Passwort ein. <br> Wir senden dir eine E-Mail mit deinem
-                        Passwort
-                        und deinem Benutzernamen.
+                        Gib nun einen Benutzernamen und ein Passwort ein. <br> <span class="subtitle is-7">Wir senden
+                            dir eine E-Mail mit
+                            deinems
+                            Passwort
+                            und deinem Benutzernamen.</span>
                     </h2>
 
                     <div class="columns">
@@ -164,12 +166,13 @@ if(isset($_SESSION['fehler'])){
     <p>Du wirst danach direkt auf die Stream Seite geleitet. <br> Du kannst dir diese gern als Favorit
         in
         deinem Browser speichern</p>
+    <a href="#imprint">Impressum / Datenschutz</a>
     </div>
     </div>
     </div>
     </div>
     </section>
-    <div class="imprint">
+    <div class="imprint" id="imprint">
         <section class="section">
             <div class="container">
                 <h3 class="title is-5 has-text-weight-bold">
