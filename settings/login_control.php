@@ -19,9 +19,11 @@ $_SESSION['token'];
         $statement = $pdo->prepare($sql);
         $statement->execute(array('benutzer' => $_SESSION['benutzername']));
         $token = $statement->fetch();
+        if($token['token'] !== $_SESSION['token']){
+            echo "tokens stimmen nicht überein, du solltest eig ausgeloggt werden";
+        }
 
-        echo "Token aus der Datenbank: " . $token['token'] . "<br>";
-        echo "Token aus der Session: " . $_SESSION['token'] . "<br>";
+        
     }
 
 
