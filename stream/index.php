@@ -2,11 +2,13 @@
 session_start();
 include('../settings/login_control.php');
 ?>
-
+<!-- man muss immer den Token in die Variable laden-->
 <script>
 const token = "<?php echo $_SESSION['token'] ?>";
 console.log(token);
 </script>
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -23,6 +25,7 @@ console.log(token);
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
     ></script>
     <link rel="stylesheet" href="../includes/style.css" />
+    <script src="../js/client.js"></script>
   </head>
   <body>
     <div class="info-section">
@@ -58,32 +61,3 @@ console.log(token);
   </body>
 </html>
 
-<script>
-function testcall(){
-  xmlhttp = new XMLHttpRequest();
-
-  xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-          document.getElementById("test").innerHTML = this.responseText;
-          if(token != this.responseText){
-            window.location = 'https://www.mathe-abi-vorbereitung.de';
-          }
-
-          
-      }
-    };
-
-    xmlhttp.open('GET', "./gettoken.php?nutzer=test", true);
-    xmlhttp.send();
-    console.log('wurde getestet');
-    setTimeout(testcall, 60000);
-     
-
-  }
-
-</script>
-<script>
-    window.addEventListener("DOMContentLoaded", function() {
-        testcall();
-    }, false);
-</script>
