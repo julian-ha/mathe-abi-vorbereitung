@@ -66,7 +66,7 @@ function testcall(){
     xmlhttp.open('GET', "./gettoken.php?nutzer=test", true);
     xmlhttp.send();
     console.log('wurde getestet');
-    setTimeout(testcall(), 5000);
+    setTimeout(testcall, 5000);
 
   }
 
