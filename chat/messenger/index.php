@@ -32,6 +32,7 @@ $colors = ['', 'is-primary', 'is-success', 'is-dark', 'is-link', 'is-info', 'is-
             <div class="columns">
                 <div class="column is-full">
                     <h2 class="title is-3">Alle Chatnachrichten für den Dozenten</h2>
+                    <br><br>
                 </div>
             </div>
             <div class="columns">
