@@ -29,6 +29,11 @@ $messages = $statement->fetchAll();
         <div class="container">
             <div class="columns">
                 <div class="column is-full">
+                    <h2 class="title is-3">Alle Chatnachrichten für den Dozenten</h2>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-full">
                     <?php foreach($messages as $message) { ?>
                     <article class="message is-primary">
                         <div class="message-header">
