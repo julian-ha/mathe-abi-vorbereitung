@@ -10,7 +10,7 @@ $_SESSION['token'];
 // wenn nicht eingeloggt, dann auf Startseite weiterleiten
     if(!isset($_SESSION['isloggedin'])){
         session_destroy();
-        header('Location: https://www.google.com');
+        header('Location: https://www.mathe-abi-vorbereitung.de');
     }
     else{
         // Auto Log-out bei mehrfachem login
@@ -20,7 +20,7 @@ $_SESSION['token'];
         $statement->execute(array('benutzer' => $_SESSION['benutzername']));
         $token = $statement->fetch();
         if($token['token'] !== $_SESSION['token']){
-            header('Location: https://www.mathe-abi-vorbereitung.de');
+            header('Location: https://www.google.com');
         }
 
         
