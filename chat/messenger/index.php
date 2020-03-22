@@ -4,7 +4,7 @@
 $pdo = new PDO('mysql:host=188.68.47.203;dbname=k93814_matheAbi', 'k93814_matheAbi', 'Sxt0m25?');
 
 //get all messages
-$sql= "SELECT benutzername, inhalt, date_format(zeitstempel, ' %d.%m.%Y %H:%i') zeitstempel FROM nachrichten ORDER BY zeitstempel DESC";
+$sql= "SELECT benutzername, inhalt, farbe, date_format(zeitstempel, ' %d.%m.%Y %H:%i') zeitstempel FROM nachrichten ORDER BY zeitstempel DESC";
 $statement = $pdo->prepare($sql);
 $statement->execute();
 $messages = $statement->fetchAll();
