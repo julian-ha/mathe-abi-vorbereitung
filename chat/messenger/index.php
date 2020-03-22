@@ -8,6 +8,8 @@ $sql= "SELECT * FROM nachrichten ORDER BY zeitstempel DESC";
 $statement = $pdo->prepare($sql);
 $statement->execute();
 $messages = $statement->fetchAll();
+
+$colors = ['is-primary', 'is-success'];
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +37,7 @@ $messages = $statement->fetchAll();
             <div class="columns">
                 <div class="column is-full">
                     <?php foreach($messages as $message) { ?>
-                    <article class="message is-primary">
+                    <article class="message blue">
                         <div class="message-header">
                             <p>Nachricht von Nutzer: <strong><?php echo $message['benutzername'] ?></strong> </p>
                             
