@@ -9,7 +9,7 @@ $statement = $pdo->prepare($sql);
 $statement->execute();
 $messages = $statement->fetchAll();
 
-$colors = ['is-primary', 'is-success'];
+$colors = ['', 'is-primary', 'is-success', 'is-dark', 'is-link', 'is-info', 'is-warning', 'is-danger'];
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +37,7 @@ $colors = ['is-primary', 'is-success'];
             <div class="columns">
                 <div class="column is-full">
                     <?php foreach($messages as $message) { ?>
-                    <article class="message blue">
+                    <article class="message <?php $color = array_ran($colors, 1); echo $color[0] ?>">
                         <div class="message-header">
                             <p>Nachricht von Nutzer: <strong><?php echo $message['benutzername'] ?></strong> </p>
                             
