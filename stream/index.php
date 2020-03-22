@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('../settings/login_control.php');
+//include('../settings/login_control.php');
 ?>
 <!-- man muss immer den Token in die Variable laden-->
 <script>
