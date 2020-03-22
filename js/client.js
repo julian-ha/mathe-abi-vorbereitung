@@ -15,9 +15,9 @@ function checktoken(){
       setTimeout(checktoken, 60000);
 }
 
-window.addEventListener("DOMContentLoaded", function() {
-    checktoken();
-}, false);
+// window.addEventListener("DOMContentLoaded", function() {
+//     checktoken();
+// }, false);
 
 function sendMessage(){
     var inhalt = document.getElementById('frage');
