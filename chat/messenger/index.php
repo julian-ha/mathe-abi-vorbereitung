@@ -41,7 +41,7 @@ $colors = ['', 'is-primary', 'is-success', 'is-dark', 'is-link', 'is-info', 'is-
                     <?php foreach($messages as $message) {
                        
                         ?>
-                    <article class="message <?php echo array_rand($colors) ?>">
+                    <article class="message <?php echo $colors[array_rand($colors)] ?>">
                         <div class="message-header">
                             <p>Nachricht von Nutzer: <strong><?php echo $message['benutzername'] ?></strong> </p>
                             
