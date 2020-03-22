@@ -9,7 +9,7 @@ $statement = $pdo->prepare($sql);
 $statement->execute();
 $messages = $statement->fetchAll();
 
-$colors = ['', 'is-primary', 'is-success', 'is-dark', 'is-link', 'is-info', 'is-warning', 'is-danger'];
+
 ?>
 
 <!DOCTYPE html>
