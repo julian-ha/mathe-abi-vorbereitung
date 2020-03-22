@@ -50,7 +50,7 @@ $colors = ['', 'is-primary', 'is-success', 'is-dark', 'is-link', 'is-info', 'is-
                             <?php echo $message['inhalt'] ?>
                         </div>
                     </article>
-                    <?php } ?>
+                    <?php $color = null;} ?>
                 </div>
             </div>
         </div>
