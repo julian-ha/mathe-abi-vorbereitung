@@ -75,8 +75,7 @@ console.log(benutzername);
                 </p>
 
                 <iframe id="ytplayer" type="text/html" width="100%" height="500"
-                    src="https://www.youtube-nocookie.com/embed/OZjFVFW8UJY?&controls=0&rel=0&showinfo=0&modestbranding=1"
-                    frameborder="0" allowfullscreen></iframe>
+                    src="https://www.youtube.com/watch?v=jSBcr7lr5AQ" frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
         <section class="section">
