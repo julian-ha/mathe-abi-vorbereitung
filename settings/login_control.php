@@ -10,7 +10,7 @@ $_SESSION['token'];
 // wenn nicht eingeloggt, dann auf Startseite weiterleiten
     if(!isset($_SESSION['isloggedin'])){
         session_destroy();
-        header('Location: https:www.google.com');
+        header('Location: https://www.google.com');
     }
     else{
         // Auto Log-out bei mehrfachem login
