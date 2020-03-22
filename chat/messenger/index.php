@@ -11,5 +11,6 @@ $messages = $statement->fetchAll();
 
 foreach($messages as $message){
     echo $message['inhalt'] . "<br>";
+    echo $message['benutzername'] . "<br>";
 }
 ?>
