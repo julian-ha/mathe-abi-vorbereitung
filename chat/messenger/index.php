@@ -33,7 +33,7 @@ foreach($messages as $message){
         <div class="container">
             <div class="columns">
                 <div class="column is-full">
-                    <?php foreach($message as $message) { ?>
+                    <?php foreach($messages as $message) { ?>
                     <article class="message">
                         <div class="message-header">
                             <p>Nachricht von Nutzer: <?php echo $message['benutzername'] ?></p>
