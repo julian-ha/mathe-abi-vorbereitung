@@ -37,7 +37,7 @@ $colors = ['', 'is-primary', 'is-success', 'is-dark', 'is-link', 'is-info', 'is-
             <div class="columns">
                 <div class="column is-full">
                     <?php foreach($messages as $message) { ?>
-                    <article class="message <?php $color = array_rand($colors, 1); echo $colors[$color[0]] ?>">
+                    <article class="message is-primary">
                         <div class="message-header">
                             <p>Nachricht von Nutzer: <strong><?php echo $message['benutzername'] ?></strong> </p>
                             
