@@ -41,7 +41,7 @@ $messages = $statement->fetchAll();
                     <?php foreach($messages as $message) {
                        
                         ?>
-                    <article class="message <?php echo $colors[array_rand($colors)] ?>">
+                    <article class="message <?php echo $message['farbe'] ?>">
                         <div class="message-header">
                             <p>Nachricht von Nutzer: <strong><?php echo $message['benutzername'] ?></strong> </p>
                             
