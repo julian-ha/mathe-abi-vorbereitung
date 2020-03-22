@@ -43,7 +43,7 @@ $messages = $statement->fetchAll();
                         ?>
                     <article class="message <?php echo $message['farbe'] ?>">
                         <div class="message-header">
-                            <p>Nachricht von Nutzer: <strong><?php echo $message['benutzername'] ?></strong> <span style="float: right"> Uhrzeit: <?php echo $messge['zeitstempel'] ?></span> </p>
+                            <p>Nachricht von Nutzer: <strong><?php echo $message['benutzername'] ?></strong> <span class="delete"> Uhrzeit: <?php echo $messge['zeitstempel'] ?></span> </p>
 
                             
                         </div>
