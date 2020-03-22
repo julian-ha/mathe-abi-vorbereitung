@@ -34,13 +34,13 @@ foreach($messages as $message){
             <div class="columns">
                 <div class="column is-full">
                     <?php foreach($messages as $message) { ?>
-                    <article class="message">
+                    <article class="message is-primary">
                         <div class="message-header">
-                            <p>Nachricht von Nutzer: <?php echo $message['benutzername'] ?></p>
-                            <button class="delete" aria-label="delete"></button>
+                            <p>Nachricht von Nutzer: <strong><?php echo $message['benutzername'] ?></strong> </p>
+                            
                         </div>
                         <div class="message-body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                            <?php echo $message['inhalt'] ?>
                         </div>
                     </article>
                     <?php } ?>
