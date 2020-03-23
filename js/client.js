@@ -4,7 +4,6 @@ function checktoken(){
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             if(token != this.responseText){
-             sendNotification("Sie werden gleich ausgeloggt");
               window.location = 'https://www.mathe-abi-vorbereitung.de';
               
             }     
