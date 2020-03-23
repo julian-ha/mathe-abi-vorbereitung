@@ -55,35 +55,45 @@ session_start();
                         Gib nun einen Benutzernamen und ein Passwort ein
                     </h2>
                     <div class="columns">
-                        <div class="column register-form">
-                            <div class="field">
-                                <label class="label">Benutzername</label>
-                                <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-primary" type="text"
-                                        placeholder="Gib deinen Benutzernamen ein" value="" name="benutzer" required />
-                                    <span class="icon is-small is-left">
-                                        <i class="fas fa-user"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label class="label">Passwort</label>
-                                <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-primary" type="password" placeholder="Gib dein Passwort ein"
-                                        value="" name="passwort" required />
-                                    <span class="icon is-small is-left">
-                                        <i class="fas fa-user"></i>
-                                    </span>
-                                </div>
-                                <br />
-
-                            </div>
-                            <?php if(isset($_SESSION['notification'])){
-                                echo "<p>". $_SESSION['notification']. "</p>";
-                                unset($_SESSION['notification']);
-                            } ?>
-                            <input class="button is-primary" type="submit" name="submit" value="Login">
-                        </div>
+                        <div class="box">
+                            <article class="media">
+                             
+                              <div class="media-content">
+                                <div class="content">
+                                    <div class="column register-form">
+                                        <div class="field">
+                                            <label class="label">Benutzername</label>
+                                            <div class="control has-icons-left has-icons-right">
+                                                <input class="input is-primary" type="text"
+                                                    placeholder="Gib deinen Benutzernamen ein" value="" name="benutzer" required />
+                                                <span class="icon is-small is-left">
+                                                    <i class="fas fa-user"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">Passwort</label>
+                                            <div class="control has-icons-left has-icons-right">
+                                                <input class="input is-primary" type="password" placeholder="Gib dein Passwort ein"
+                                                    value="" name="passwort" required />
+                                                <span class="icon is-small is-left">
+                                                    <i class="fas fa-user"></i>
+                                                </span>
+                                            </div>
+                                            <br />
+            
+                                        </div>
+                                        <?php if(isset($_SESSION['notification'])){
+                                            echo "<p>". $_SESSION['notification']. "</p>";
+                                            unset($_SESSION['notification']);
+                                        } ?>
+                                        <input class="button is-primary" type="submit" name="submit" value="Login">
+                                    </div>
+                                </div>                            
+                              </div>
+                            </article>
+                          </div>
+                       
                     </div>
                 </div>
             </div>
