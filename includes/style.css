@@ -69,3 +69,8 @@
 .toastify.on {
   opacity: 1;
 }
+.login-form {
+  max-width: 400px;
+  margin: 0px auto;
+  display: inline !important;
+}
