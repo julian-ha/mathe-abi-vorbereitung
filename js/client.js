@@ -29,33 +29,23 @@ function sendMessage(){
     xmlhttp.onreadystatechange = function() {
         if(this.readyState == 4 && this.status == 200) {
             var message = "Ihre Nachricht wurde erfolgreich versandt";
-            sendNotification(message);
-            console.log(this.responseText);
-            inhalt.value = "";
-        }else {
-            var message = "Beim versenden ihrer Nachricht ist ein Fehler aufgetreten";
-            sendNotification(message);
+            sendNotification(message);   
         }
+       
     };
     xmlhttp.open('GET', "../settings/send_message.php?benutzername=" + benutzername + "&inhalt=" + inhalt.value);
     xmlhttp.send();
 }
 
 function sendNotification(message){
-    //hinzufügen der Klasse um die Notification anzuzeigen
-    document.getElementById('mess-body').innerHTML = message;
-    document.getElementById('notification').classList.toggle('message-none');
     var myToast = Toastify({
         
-        text: "This is a toast message",
+        text: message,
        
         duration: 5000
        
        })
    myToast.showToast();
 
-    //5sek warten
-
-    //Klasse wieder entfernen
 
 }
