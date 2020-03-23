@@ -147,7 +147,7 @@ console.log(benutzername);
             </div>
         </section>
     </div>
-    <script src="./includes/navbar.js"></script>
+    <script src="https://mathe-abi-vorbereitung.de/includes/navbar.js"></script>
 </body>
 
 </html>
