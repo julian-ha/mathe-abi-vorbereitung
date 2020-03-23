@@ -67,22 +67,22 @@ console.log(benutzername);
     <div class="info-section stream-container">
         <section class="section ">
             <div class="container">
-                <h2 class="title is-4 has-text-weight-bold has-text-light">
+                <h2 class="title is-3 has-text-weight-bold">
                     Willkommen zur Mathe-Abi-Vorbereitung
                 </h2>
-                <p class="subtitle is-6 has-text-light">
+                <p class="subtitle is-6">
                     Wir bereiten dich auf das Abi vor!
                 </p>
 
-                <iframe id="ytplayer" type="text/html" width="100%" height="500"
-                    src="https://www.youtube.com/watch?v=jSBcr7lr5AQ" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://player.vimeo.com/video/399397842" width="100%" height="500px" frameborder="0"
+                    allow="autoplay; fullscreen" allowfullscreen></iframe>
             </div>
         </section>
         <section class="section">
             <div class="container">
                 <div class="columns">
                     <div class="column">
-                        <h2 class="title is-4 has-text-weight-bold has-text-light">
+                        <h2 class="title is-4 has-text-weight-bold">
                             Zeit für deine Fragen
                         </h2>
                         <textarea class="textarea" name="" id="frage" cols="100" rows="10"
@@ -93,15 +93,15 @@ console.log(benutzername);
                         </button>
                     </div>
                     <div class="column">
-                        <h2 class="title is-4 has-text-weight-bold has-text-light">
+                        <h2 class="title is-4 has-text-weight-bold">
                             Funktionen & Hilfe
                         </h2>
                         <ul>
-                            <li class=" has-text-light">
+                            <li class="">
                                 Doppelklick auf Stream = Vollbild
                             </li>
                         </ul>
-                        <p class=" has-text-light">
+                        <p class="">
                             Solltest du Probleme mit dem Stream haben klicke hier:
                         </p>
                         <a class="has-text-primary"
@@ -113,7 +113,7 @@ console.log(benutzername);
         </section>
         <section class="section">
             <div class="container">
-                <h3 class="title is-4 has-text-weight-bold has-text-light">
+                <h3 class="title is-4 has-text-weight-bold">
                     Natürlich kannst du uns auch eine Mail schreiben
                 </h3>
                 <a class="has-text-primary" href="">Neue Mail verfassen</a>
@@ -147,6 +147,7 @@ console.log(benutzername);
             </div>
         </section>
     </div>
+    <script src="./includes/navbar.js"></script>
 </body>
 
 </html>
