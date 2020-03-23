@@ -44,3 +44,9 @@
   display: none;
 }
 
+.dankseite-info {
+  max-width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: left;
+}
