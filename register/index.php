@@ -174,37 +174,46 @@ if($showFormular) {
 
                     <div class="columns">
                         <div class="column register-form">
-                            <div class="field">
-                                <label class="label">Benutzername</label>
-                                <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-primary" type="text" placeholder="Wähle einen Benutzernamen"
-                                        value="" maxlength="250" name="benutzername" required />
-                                    <span class="icon is-small is-left">
-                                        <i class="fas fa-user"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label class="label">Passwort</label>
-                                <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-primary" type="password" placeholder="Wähle ein Passswort"
-                                        value="" maxlength="250" name="passwort" required />
-                                    <span class="icon is-small is-left">
-                                        <i class="fas fa-key"></i> </span>
-                                </div>
-                                <br />
-                                <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-primary" type="password"
-                                        placeholder="Bestätige dein Passswort" value="" maxlength="250" name="passwort2"
-                                        required />
-                                    <span class="icon is-small is-left">
-                                        <i class="fas fa-key"></i>
-                                    </span>
-                                </div>
-                            </div>
+                            <div class="box">
+                                <article class="media">
+                                 
+                                  <div class="media-content">
+                                    <div class="content">
+                                        <div class="field">
+                                            <label class="label">Benutzername</label>
+                                            <div class="control has-icons-left has-icons-right">
+                                                <input class="input is-primary" type="text" placeholder="Wähle einen Benutzernamen"
+                                                    value="" maxlength="250" name="benutzername" required />
+                                                <span class="icon is-small is-left">
+                                                    <i class="fas fa-user"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">Passwort</label>
+                                            <div class="control has-icons-left has-icons-right">
+                                                <input class="input is-primary" type="password" placeholder="Wähle ein Passswort"
+                                                    value="" maxlength="250" name="passwort" required />
+                                                <span class="icon is-small is-left">
+                                                    <i class="fas fa-key"></i> </span>
+                                            </div>
+                                            <br />
+                                            <div class="control has-icons-left has-icons-right">
+                                                <input class="input is-primary" type="password"
+                                                    placeholder="Bestätige dein Passswort" value="" maxlength="250" name="passwort2"
+                                                    required />
+                                                <span class="icon is-small is-left">
+                                                    <i class="fas fa-key"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  
+                                  </div>
+                                </article>
+                              </div>                          
+                            
                             <p class="subtitle is-7">Die Abbuchung erfolgt durch Digistore24</p>
-
-
 
 
                             <?php
