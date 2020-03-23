@@ -29,13 +29,14 @@ function sendMessage(){
     xmlhttp.onreadystatechange = function() {
         if(this.readyState == 4 && this.status == 200) {
             var message = "Ihre Nachricht wurde erfolgreich versandt";
-            sendNotification(message);
+            
             console.log(this.responseText);
             inhalt.value = "";
         }else {
             var message = "Beim versenden ihrer Nachricht ist ein Fehler aufgetreten";
-            sendNotification(message);
+            
         }
+        sendNotification(message);
     };
     xmlhttp.open('GET', "../settings/send_message.php?benutzername=" + benutzername + "&inhalt=" + inhalt.value);
     xmlhttp.send();
@@ -54,8 +55,5 @@ function sendNotification(message){
        })
    myToast.showToast();
 
-    //5sek warten
-
-    //Klasse wieder entfernen
 
 }
