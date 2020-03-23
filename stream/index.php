@@ -22,6 +22,7 @@ console.log(benutzername);
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="stylesheet" href="../includes/style.css" />
     <script src="../js/client.js"></script>
+    <script src="..js/toastify.js"></script>
 </head>
 
 <body>
