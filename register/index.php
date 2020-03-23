@@ -164,6 +164,7 @@ if($showFormular) {
                                     <li>Danach erhältst du einen Account und kannst dich direkt anmelden</li>
                                     <li>Melde dich zu deinem gewählten Streaming Termin an</li>
                                 </ol>
+                                <br>
                                 <p>Wir senden dir einen E-Mail mit deinen gewählten Zugangsdaten zu, so musst du dir
                                     diese
                                     nicht merken und kannst dich auf dein Abi konzentrieren.</p>
