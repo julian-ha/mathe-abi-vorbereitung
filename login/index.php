@@ -54,7 +54,7 @@ session_start();
                     <h2 class="subtitle">
                         Gib nun einen Benutzernamen und ein Passwort ein
                     </h2>
-                    <div class="columns">
+                    <div class="columns login-form">
                         <div class="box">
                             <article class="media">
                              
