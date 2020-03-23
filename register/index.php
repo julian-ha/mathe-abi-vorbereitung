@@ -159,11 +159,11 @@ if($showFormular) {
                                 <button class="delete" aria-label="delete"></button>
                             </div>
                             <div class="message-body">
-                                <ul>
+                                <ol>
                                     <li>Vergib einen Benutzernamen und ein Passwort</li>
                                     <li>Danach erhältst du einen Account und kannst dich direkt anmelden</li>
                                     <li>Melde dich zu deinem gewählten Streaming Termin an</li>
-                                </ul>
+                                </ol>
                                 <p>Wir senden dir einen E-Mail mit deinen gewählten Zugangsdaten zu, so musst du dir
                                     diese
                                     nicht merken und kannst dich auf dein Abi konzentrieren.</p>
