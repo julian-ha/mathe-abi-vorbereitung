@@ -64,6 +64,20 @@ console.log(benutzername);
         </div>
     </nav>
 
+    <div class="message" id="notification">
+      <article class="message">
+        <div class="message-header">
+          <p>Mathe-Abi-Vorbereitung.de</p>
+          
+        </div>
+        <div class="message-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+      </article>
+    </div>
+    
+
+
     <div class="info-section stream-container">
         <section class="section ">
             <div class="container">
