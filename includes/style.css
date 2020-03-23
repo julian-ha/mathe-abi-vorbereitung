@@ -52,11 +52,9 @@
 }
 
 .toastify {
-  padding: 12px 20px;
+  padding: 10px 20px;
   color: #ffffff;
   display: inline-block;
-  box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.12),
-    0 10px 36px -4px hsl(171, 100%, 41%);
   background: hsl(171, 100%, 41%);
   background: hsl(171, 100%, 41%);
   position: fixed;
