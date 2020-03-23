@@ -152,13 +152,21 @@ if($showFormular) {
                         Dein Kauf war erfolgreich
                     </h1>
                     <br>
-                    <h2 class="subtitle">
-                        Vergib nun einen Benutzernamen und ein Passwort. Danach hast du direkten Zugriff auf deinen
-                        Account, mit welchem du den Stream an deinem gewählten Datum ansehen kannst.<br> <span
-                            class="subtitle is-7">Wir senden dir deine gewählten Zugangsdaten zusätzlich per E-Mail zu,
-                            so musst du sie nicht im Kopf behalten.</span>
-                    </h2>
-
+                    <article class="message is-link">
+                        <div class="message-header">
+                            <p>Weitere Schritte</p>
+                            <button class="delete" aria-label="delete"></button>
+                        </div>
+                        <div class="message-body">
+                            <ul>
+                                <li>Vergib einen Benutzernamen und ein Passwort</li>
+                                <li>Danach erhältst du einen Account und kannst dich direkt anmelden</li>
+                                <li>Melde dich zu deinem gewählten Streaming Termin an</li>
+                            </ul>
+                            <p>Wir senden dir einen E-Mail mit deinen gewählten Zugangsdaten zu, so musst du dir diese
+                                nicht merken und kannst dich auf dein Abi konzentrieren.</p>
+                        </div>
+                    </article>
                     <div class="columns">
                         <div class="column register-form">
                             <div class="field">
