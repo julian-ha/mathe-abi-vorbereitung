@@ -27,13 +27,11 @@ function sendMessage(){
 
     xmlhttp.onreadystatechange = function() {
         if(this.readyState == 4 && this.status == 200) {
-            var color = "is-primary";
             var message = "Ihre Nachricht wurde erfolgreich versandt";
             sendNotification(color, message);
             console.log(this.responseText);
             inhalt.value = "";
         }else {
-            var color = "is-danger";
             var message = "Beim versenden ihrer Nachricht ist ein Fehler aufgetreten";
             sendNotification(color, message);
         }
@@ -44,7 +42,6 @@ function sendMessage(){
 
 function sendNotification(color, message){
     //hinzufügen der Klasse um die Notification anzuzeigen
-    document.getElementById('message').classList.add(color);
 
     //5sek warten
 
