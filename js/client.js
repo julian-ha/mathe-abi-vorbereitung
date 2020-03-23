@@ -4,8 +4,9 @@ function checktoken(){
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             if(token != this.responseText){
-              window.location = 'https://www.mathe-abi-vorbereitung.de';
-              
+                sendNotification("Ein anderer Benutzer hat sich mit ihren Daten eingeloggt. Sie werden ausgeloggt");
+                setTimeout(() => { window.location = 'https://www.mathe-abi-vorbereitung.de';   }, 10000);
+                      
             }     
         }
       };
