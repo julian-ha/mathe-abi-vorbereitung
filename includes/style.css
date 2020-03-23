@@ -72,5 +72,5 @@
 .login-form {
   max-width: 500px;
   margin: auto;
-  display: inline;
+  display: inline !important;
 }
