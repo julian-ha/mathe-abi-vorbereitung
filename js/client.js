@@ -44,6 +44,7 @@ function sendMessage(){
 
 function sendNotification(color, message){
     //hinzufügen der Klasse um die Notification anzuzeigen
+    document.getElementById('message').classList.add(color);
 
     //5sek warten
 

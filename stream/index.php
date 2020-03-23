@@ -65,7 +65,7 @@ console.log(benutzername);
     </nav>
 
     <div class="message" id="notification">
-      <article class="message">
+      <article class="message" id="message">
         <div class="message-header">
           <p>Mathe-Abi-Vorbereitung.de</p>
           
