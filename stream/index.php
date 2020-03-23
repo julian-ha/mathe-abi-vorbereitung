@@ -64,13 +64,13 @@ console.log(benutzername);
         </div>
     </nav>
 
-    <div class="message message-none" id="notification">
+    <div class="message message1 message-none" id="notification">
       <article class="message" id="message">
         <div class="message-header">
           <p>Mathe-Abi-Vorbereitung.de</p>
           
         </div>
-        <div class="message-body">
+        <div class="message-body" id="mess-body">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </div>
       </article>
