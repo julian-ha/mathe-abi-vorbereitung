@@ -39,3 +39,8 @@
   margin-left: 10px;
   z-index: 9999;
 }
+
+.message-none {
+  display: none;
+}
+
