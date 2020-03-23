@@ -200,12 +200,15 @@ if(isset($_SESSION['fehler'])){
 }
 ?>
 
-                            <input class="button is-primary" type="submit" value="<strong>Weiter</strong>">
+                            <input class="button is-primary" type="submit" value="Weiter">
     </form>
     <br>
     <p>Du wirst danach direkt auf die Stream Seite geleitet. <br> Du kannst dir diese gern als Favorit
         in
-        deinem Browser speichern</p>
+        deinem Browser speichern
+        <br>
+        Solltest du Fragen haben, schicke uns eine E-Mail <a href="mailto:info@einfachmathe.de">Mail-Senden</a>
+    </p>
     <a href="#imprint">Impressum / Datenschutz</a>
     </div>
     </div>
