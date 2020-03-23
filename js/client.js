@@ -42,7 +42,7 @@ function sendMessage(){
 
 function sendNotification(color, message){
     //hinzufügen der Klasse um die Notification anzuzeigen
-    document.getElementById('notification').classList.toggle()
+    document.getElementById('notification').classList.toggle('message-none');
 
     //5sek warten
 
