@@ -112,7 +112,7 @@ session_start();
 
 
 
-
+    <script src="https://mathe-abi-vorbereitung.de/includes/navbar.js"></script>
 
 </body>
 

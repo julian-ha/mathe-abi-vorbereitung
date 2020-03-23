@@ -194,6 +194,7 @@ if(isset($_SESSION['fehler'])){
     <?php
 } //Ende von if($showFormular)
 ?>
+    <script src="https://mathe-abi-vorbereitung.de/includes/navbar.js"></script>
 
 </body>
 
