@@ -5,6 +5,7 @@ function checktoken(){
         if (this.readyState == 4 && this.status == 200) {
             if(token != this.responseText){
               window.location = 'https://www.mathe-abi-vorbereitung.de';
+              sendNotification('Sie wurden ausgeloggt');
               
             }     
         }
@@ -39,11 +40,8 @@ function sendMessage(){
 
 function sendNotification(message){
     var myToast = Toastify({
-        
         text: message,
-       
         duration: 5000
-       
        })
    myToast.showToast();
 
