@@ -33,7 +33,7 @@
 }
 .message {
   width: 50%;
-  position: static;
+  position: fixed;
   margin-top: 10px;
   right: 10px;
   z-index: 9999;
