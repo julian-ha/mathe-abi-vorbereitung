@@ -5,6 +5,7 @@ function checktoken(){
         if (this.readyState == 4 && this.status == 200) {
             if(token != this.responseText){
               window.location = 'https://www.mathe-abi-vorbereitung.de';
+              
             }     
         }
       };
@@ -26,10 +27,26 @@ function sendMessage(){
 
     xmlhttp.onreadystatechange = function() {
         if(this.readyState == 4 && this.status == 200) {
+            var color = "is-primary";
+            var message = "Ihre Nachricht wurde erfolgreich versandt";
+            sendNotification(color, message);
             console.log(this.responseText);
             inhalt.value = "";
+        }else {
+            var color = "is-danger";
+            var message = "Beim versenden ihrer Nachricht ist ein Fehler aufgetreten";
+            sendNotification(color, message);
         }
     };
     xmlhttp.open('GET', "../settings/send_message.php?benutzername=" + benutzername + "&inhalt=" + inhalt.value);
     xmlhttp.send();
+}
+
+function sendNotification(color, message){
+    //hinzufügen der Klasse um die Notification anzuzeigen
+
+    //5sek warten
+
+    //Klasse wieder entfernen
+
 }
