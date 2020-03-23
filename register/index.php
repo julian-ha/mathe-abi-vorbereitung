@@ -151,6 +151,7 @@ if($showFormular) {
                     <h1 class="title">
                         Dein Kauf war erfolgreich
                     </h1>
+                    <br>
                     <h2 class="subtitle">
                         Vergib nun einen Benutzernamen und ein Passwort. Danach hast du direkten Zugriff auf deinen
                         Account, mit welchem du den Stream an deinem gewählten Datum ansehen kannst.<br> <span
