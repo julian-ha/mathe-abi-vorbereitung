@@ -17,8 +17,7 @@ function checktoken(){
 }
 
 window.addEventListener("DOMContentLoaded", function() {
-    checktoken();
-        
+    checktoken();   
 }, false);
 
 function sendMessage(){
@@ -44,6 +43,4 @@ function sendNotification(message){
         duration: 5000
        })
    myToast.showToast();
-
-
 }

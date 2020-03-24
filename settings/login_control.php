@@ -14,7 +14,6 @@ $_SESSION['token'];
     }
     else{
         // Auto Log-out bei mehrfachem login
-
         $sql = "SELECT token FROM user_token WHERE benutzername = :benutzer";
         $statement = $pdo->prepare($sql);
         $statement->execute(array('benutzer' => $_SESSION['benutzername']));
