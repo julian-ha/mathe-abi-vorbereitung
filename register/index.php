@@ -157,7 +157,6 @@ if($showFormular) {
                         <article class="message is-primary">
                             <div class="message-header">
                                 <p>Weitere Schritte</p>
-                                <button class="delete" aria-label="delete"></button>
                             </div>
                             <div class="message-body">
                                 <ol>
