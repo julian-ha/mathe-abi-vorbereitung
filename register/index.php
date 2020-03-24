@@ -151,6 +151,7 @@ if($showFormular) {
                     <h1 class="title">
                         Dein Kauf war erfolgreich
                     </h1>
+                    <p>Da es sich um einen Livestream als digitales Produkt handelt, ist jegliche Rückgabe ausgeschlossen.</p>
                     <br>
                     <div class="dankseite-info">
                         <article class="message is-primary">
@@ -223,7 +224,7 @@ if(isset($_SESSION['fehler'])){
 }
 ?>
 
-                            <input class="button is-primary" type="submit" value="Weiter">
+    <input class="button is-primary" type="submit" value="Weiter">
     </form>
     <br>
     <br>
