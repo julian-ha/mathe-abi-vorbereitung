@@ -21,7 +21,7 @@ $pdo = new PDO('mysql:host=188.68.47.203;dbname=k93814_matheAbi', 'k93814_matheA
 </head>
 
 <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <!-- <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://mathe-abi-vorbereitung.de">
                 <p><strong>Mathe-Abi-Vorbereitung</strong></p>
@@ -61,7 +61,7 @@ $pdo = new PDO('mysql:host=188.68.47.203;dbname=k93814_matheAbi', 'k93814_matheA
                 </div>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <?php
 $showFormular = true; //Variable ob das Registrierungsformular anezeigt werden soll
@@ -233,7 +233,6 @@ if(isset($_SESSION['fehler'])){
         <br>
         Solltest du Fragen haben, schicke uns eine E-Mail <a href="mailto:info@einfachmathe.de">Mail-Senden</a>
     </p>
-    <a href="#imprint">Impressum / Datenschutz</a>
     </div>
     </div>
     </div>
