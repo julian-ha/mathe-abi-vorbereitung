@@ -304,7 +304,8 @@ function digistore_signature( $sha_passphrase, $parameters, $convert_keys_to_upp
 
 
 
-if (!$_GET)
+if(!isset($_SESSION['email'])){
+    if (!$_GET)
 {
     die( "FEHLER: Es wurden keine (Bestell-)Daten als GET-Parameter übergeben." );
 }
@@ -340,6 +341,7 @@ $last_name = isset( $DECRYPTED_GET_PARAMS ['buyer_last_name']) ? $DECRYPTED_GET_
 $_SESSION['email'] = $email;
 $_SESSION['vorname'] = $first_name;
 $_SESSION['nachname'] = $last_name;
+}
 ?>
 
 
