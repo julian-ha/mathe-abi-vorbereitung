@@ -29,7 +29,7 @@ function sendMessage(){
     xmlhttp.onreadystatechange = function() {
         if(this.readyState == 4 && this.status == 200) {
             var message = "Ihre Nachricht wurde erfolgreich versandt";
-            inhalt.value = "";
+            inhalt.innerHTML = "";
             sendNotification(message);   
         }
        
