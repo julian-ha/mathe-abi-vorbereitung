@@ -17,7 +17,7 @@ $messages = $statement->fetchAll();
 
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="5; URL=https://www.mathe-abi-vorbereitung.de/chat/messenger/">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mathe-Abi-Vorbereitung - Chats für Dozenten</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
@@ -60,14 +60,19 @@ $messages = $statement->fetchAll();
 
     <script>
        function reloader(){
-    var button = document.getElementById('reload');
+            var button = document.getElementById('reload');
 
-    if(button.innerHTML =="Auto-Update"){
-        button.innerHTML = "Beenden";
-    } else {
-        button.innerHTML = "Auto-Update";
-    }
-}
+            if(button.innerHTML =="Auto-Update"){
+                reload();
+                button.innerHTML = "Beenden";
+            } else {
+                button.innerHTML = "Auto-Update";
+                
+            }
+        } 
+        function reload(){
+            location.reload(true);
+        }      
     </script>
 
     </body>
