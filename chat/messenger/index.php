@@ -72,6 +72,7 @@ $messages = $statement->fetchAll();
         } 
         function reload(){
             location.reload(true);
+            setTimeout(() => { reload();   }, 10000);
         }      
     </script>
 
