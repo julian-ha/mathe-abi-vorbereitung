@@ -45,3 +45,4 @@ function sendNotification(message){
        })
    myToast.showToast();
 }
+
