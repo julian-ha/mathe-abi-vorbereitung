@@ -33,7 +33,7 @@ $messages = $statement->fetchAll();
             <div class="columns">
                 <div class="column is-full">
                     <h2 class="title is-3">Alle Chatnachrichten für den Dozenten</h2>
-                    <button class="button is-primary" onclick="reloader()" id="reload">Auto-Update</button>
+                    
                     <br><br>
                 </div>
             </div>
