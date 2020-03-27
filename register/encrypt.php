@@ -417,14 +417,16 @@ if(isset($_GET['register'])) {
             $betreff = "Zugangsdaten Mathe Abi Vorbereitung";
             $from = "From: Mathe Abi Vorbereitung <noreply@mathe-abi-vorbereitung.de>";
             $text = "Hallo " . $_SESSION['vorname']. ", 
-            Vielen Dank für die Registrierung bei Mathe-Abi-Vorbereitung.de
+            Vielen Dank für die Registrierung bei Mathe-Abi-Vorbereitung.de.
             Hier sind deine Zugangsdaten um alle Vorteile der Plattform nutzen zu können.
             
             benutzername: " . $benutzername ."
             Passwort: " . $passwort . "
-            
+
+            Bitte versuche, vorab dich anzumelden, um am Kursdatum einen reibungslosen Ablauf zu gewährleisten.
+
             Viel Spaß und ganz viel Erfolg bei deinem Abitur,
-            Dein Mathe Abi Vorbereitungs Team";
+            Dein Mathe Abi Vorbereitungs Team :)";
             
             mail($empfaenger, $betreff, $text, $from);
 
