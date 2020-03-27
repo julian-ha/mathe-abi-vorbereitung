@@ -464,6 +464,8 @@ if($showFormular) {
                                     <li>Melde dich zu deinem gewählten Streaming Termin an</li>
                                 </ol>
                                 <br>
+                                <p>Schau in deinem SPAM Ordner nach. Deine Zugangsdaten sind envetuell dort gelandet.
+                                </p>
                                 <p>Wir senden dir einen E-Mail mit deinen gewählten Zugangsdaten zu, so musst du dir
                                     diese
                                     nicht merken und kannst dich auf dein Abi konzentrieren.</p>
@@ -515,12 +517,11 @@ if($showFormular) {
                             </div>
 
                             <p class="subtitle is-7">Die Abbuchung erfolgt durch Digistore24</p>
-                            <p>Schau in deinem SPAM Ordner nach. Deine Zugangsdaten sind envetuell dort gelandet.</p>
 
 
                             <?php
 if(isset($_SESSION['fehler'])){
-    echo "<p>" . $_SESSION['fehler'] . "</p>";
+    echo "<p class='has-text-danger>" . $_SESSION['fehler'] . "</p>";
     unset($_SESSION['fehler']);
 }
 ?>
