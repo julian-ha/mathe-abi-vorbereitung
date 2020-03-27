@@ -449,7 +449,8 @@ if($showFormular) {
                     <h1 class="title">
                         Dein Kauf war erfolgreich
                     </h1>
-                    <p class="subtitle is-6">Da es sich um einen Livestream als digitales Produkt handelt, ist jegliche Rückgabe ausgeschlossen.</p>
+                    <p class="subtitle is-6">Da es sich um einen Livestream als digitales Produkt handelt, ist jegliche
+                        Rückgabe ausgeschlossen.</p>
                     <br>
                     <div class="dankseite-info">
                         <article class="message is-primary">
@@ -474,44 +475,47 @@ if($showFormular) {
                         <div class="column register-form">
                             <div class="box">
                                 <article class="media">
-                                 
-                                  <div class="media-content">
-                                    <div class="content">
-                                        <div class="field">
-                                            <label class="label">Benutzername</label>
-                                            <div class="control has-icons-left has-icons-right">
-                                                <input class="input is-primary" type="text" placeholder="Wähle einen Benutzernamen"
-                                                    value="" maxlength="250" name="benutzername" required />
-                                                <span class="icon is-small is-left">
-                                                    <i class="fas fa-user"></i>
-                                                </span>
+
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <div class="field">
+                                                <label class="label">Benutzername</label>
+                                                <div class="control has-icons-left has-icons-right">
+                                                    <input class="input is-primary" type="text"
+                                                        placeholder="Wähle einen Benutzernamen" value="" maxlength="250"
+                                                        name="benutzername" required />
+                                                    <span class="icon is-small is-left">
+                                                        <i class="fas fa-user"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label class="label">Passwort</label>
+                                                <div class="control has-icons-left has-icons-right">
+                                                    <input class="input is-primary" type="password"
+                                                        placeholder="Wähle ein Passswort" value="" maxlength="250"
+                                                        name="passwort" required />
+                                                    <span class="icon is-small is-left">
+                                                        <i class="fas fa-key"></i> </span>
+                                                </div>
+                                                <br />
+                                                <div class="control has-icons-left has-icons-right">
+                                                    <input class="input is-primary" type="password"
+                                                        placeholder="Bestätige dein Passswort" value="" maxlength="250"
+                                                        name="passwort2" required />
+                                                    <span class="icon is-small is-left">
+                                                        <i class="fas fa-key"></i>
+                                                    </span>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="field">
-                                            <label class="label">Passwort</label>
-                                            <div class="control has-icons-left has-icons-right">
-                                                <input class="input is-primary" type="password" placeholder="Wähle ein Passswort"
-                                                    value="" maxlength="250" name="passwort" required />
-                                                <span class="icon is-small is-left">
-                                                    <i class="fas fa-key"></i> </span>
-                                            </div>
-                                            <br />
-                                            <div class="control has-icons-left has-icons-right">
-                                                <input class="input is-primary" type="password"
-                                                    placeholder="Bestätige dein Passswort" value="" maxlength="250" name="passwort2"
-                                                    required />
-                                                <span class="icon is-small is-left">
-                                                    <i class="fas fa-key"></i>
-                                                </span>
-                                            </div>
-                                        </div>
+
                                     </div>
-                                  
-                                  </div>
                                 </article>
-                              </div>                          
-                            
+                            </div>
+
                             <p class="subtitle is-7">Die Abbuchung erfolgt durch Digistore24</p>
+                            <p>Schau in deinem SPAM Ordner nach. Deine Zugangsdaten sind envetuell dort gelandet.</p>
 
 
                             <?php
@@ -521,7 +525,7 @@ if(isset($_SESSION['fehler'])){
 }
 ?>
 
-    <input class="button is-primary" type="submit" value="Weiter">
+                            <input class="button is-primary" type="submit" value="Weiter">
     </form>
     <br>
     <br>
