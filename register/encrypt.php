@@ -523,7 +523,7 @@ if($showFormular) {
 
                             <?php
 if(isset($_SESSION['fehler'])){
-    echo "<p class='has-text-danger>" . $_SESSION['fehler'] . "</p>";
+    echo "<p class='has-text-danger'>" . $_SESSION['fehler'] . "</p>";
     unset($_SESSION['fehler']);
 }
 ?>
